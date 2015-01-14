@@ -1,4 +1,3 @@
-CSCI 3753
 Lecture 1 - Introduction
 ------------------------
 
