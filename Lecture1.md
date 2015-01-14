@@ -6,7 +6,7 @@ Office Hour: Tuesday 1:30 - 2:30 pm
 
 Moodle （Grading info）
 
-Enrollment Key: ostocks15
+Enrollment Key: osrocks15
 
 *********************************************************************
 
