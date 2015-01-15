@@ -55,7 +55,7 @@ to boot from a list of different kernels available on the machine.
 
 
 * **system call code**
-	```
+	```c
 
 	int main()
 	{
@@ -63,7 +63,7 @@ to boot from a list of different kernels available on the machine.
 		printf(x)
 	}
  	
- 	```
+ 	
 
 
 Homework
@@ -83,7 +83,7 @@ Homework
 		printf(x); // 0  --> return 0 meaning sucsess
 		print(c); // 30 --> return a value stored in pointer c
 	}
-
+	```
 
 
 
