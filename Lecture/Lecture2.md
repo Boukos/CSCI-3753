@@ -59,7 +59,7 @@ Lecture
   
 * **Mode changes, How Apps and the OS commucated**
     - System call between user mode(mode bit = 1) and kernel mode (mode bit = 0)
-
+    - user process exe -> system call -> trap to the OS, interupt the exe of the software -> transfer control to the kernel , execute system call ->handle system call and reset the mode bit to 1 -> return to user from the system call
 
 
 
