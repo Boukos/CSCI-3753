@@ -12,13 +12,17 @@ Enrollment Key: osrocks15
 
 What is an Operating System?
 -----------------------------
-* (over 500 OS!) : Windows, Linux(600 distributions), OS X  && etc
-* Application: Chrome, Office, games etc.
-* I/O : Mouse, Keyboard, Display etc.
+* a layer of software between many applications/diverse hardware and hardware that provides useful services to applications.
 
- What is common across these OSs?
- --------------------------------
- * An operating system is a layer of software between many applications/diverse hardware and hardware that provides useful services to applications.
+Computer System
+----------------------
+* Hardware
+	-the central processing unit ( CPU ), the memory, and the input/output ( I/O ) devices—provides the basic computing resources for the system. 
+
+* Operating System
+* Application: Chrome, Office, games etc.
+	- define the ways in which these resources are used to solve users’ computing problems.
+* I/O : Mouse, Keyboard, Display etc.
 
 
 O.S Functionality (OS "Kernel")
