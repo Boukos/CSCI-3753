@@ -109,5 +109,3 @@ Lecture
     * executing continuously until program is finished
         - Poor utilization, maybe billions of wasted instruction cycles.(other program has to wait, compares to now day, we can make use of those free memory)
     * Multiprogramming :)
-
-
