@@ -105,7 +105,10 @@ Lecture
      - C program invoking printf() library call, wich calls write() system call
 
 * ** How does an OS support multiple applications?**
-    * Batching of jobs
-    * executing continuously until program is finished
+    - Batching of jobs
+    - executing continuously until program is finished
         - Poor utilization, maybe billions of wasted instruction cycles.(other program has to wait, compares to now day, we can make use of those free memory)
-    * Multiprogramming :)
+    - Multiprogramming :) (or Multiprogrammed batch system)
+        - much efficient to share CPU
+        - Submit your program, called a job,into a job queue, when CPU is availble, OS exe your job.
+        
