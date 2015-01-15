@@ -5,21 +5,20 @@ Recitation 1
 * TA: Rahat Ibn Rafiq
 * Email: rahat.rafiq@colorado.edu 
 
- Lecture
- --------
-
- * **Kernel** 
+Lecture
+--------
+ 
+* **Kernel** 
  	- userspace -> Kernel -> Harddisk
  	- open a file in the harddisk, need to go through Kernel
- 		function open() call Kernel --> Kernel with some function system call --> Harddisk
+ 		- function open() call Kernel --> Kernel with some function system call --> Harddisk
 
 * **Userspace** 
 	- on the same machine:
-		-User A  write  programs p1
-		-User B  write  programs p2
-
-	can User A access User B ? no
-	if use some C program to hack Kernel, then you can access all userspace
+		- User A  write  programs p1
+		- User B  write  programs p2
+		- can User A access User B ? no
+		- if use some C program to hack Kernel, then you can access all userspace
 
 why VM > Linux for writing assignment : when you mess with Kernel, is very dangrous.
 
@@ -55,9 +54,8 @@ to boot from a list of different kernels available on the machine.
 	- 2. system call always return 0 or -1
 
 
-* system call code
+* **System Call Code**
 	```c
-
 	int main()
 	{
 		int x = SYSCALL(318);
@@ -67,7 +65,8 @@ to boot from a list of different kernels available on the machine.
 
 
 Homework
---------
+-----------------------------------------------------
+* **Code Example**
 	```c
 	sys_simadd(int a, int b, int *ret)
 	{
@@ -75,7 +74,7 @@ Homework
 		ret = a+b
 		return 0
 	}
-
+	
 	int main()
 	{
 		a,b,ret
@@ -84,11 +83,3 @@ Homework
 		print(c); // 30 --> return a value stored in pointer c
 	}
 	```
-
-
-
-
-
-
-
-
