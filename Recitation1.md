@@ -5,10 +5,10 @@ Recitation 1
 * TA: Rahat Ibn Rafiq
 * Email: rahat.rafiq@colorado.edu 
 
- Lecture
- --------
-
- * **Kernel** 
+Lecture
+--------
+ 
+* **Kernel** 
  	- userspace -> Kernel -> Harddisk
  	- open a file in the harddisk, need to go through Kernel
  		- function open() call Kernel --> Kernel with some function system call --> Harddisk
@@ -54,8 +54,8 @@ to boot from a list of different kernels available on the machine.
 	- 2. system call always return 0 or -1
 
 
-* system call code
-	```c
+* **system call code**
+	```
 
 	int main()
 	{
@@ -66,8 +66,8 @@ to boot from a list of different kernels available on the machine.
 
 
 Homework
---------
-	```c
+------------
+	```
 	sys_simadd(int a, int b, int *ret)
 	{
 		printk(a, b) //print log file
