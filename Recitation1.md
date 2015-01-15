@@ -54,7 +54,7 @@ to boot from a list of different kernels available on the machine.
 	- 2. system call always return 0 or -1
 
 
-* **system call code**
+* **System Call Code**
 	```c
 	int main()
 	{
