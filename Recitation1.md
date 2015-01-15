@@ -11,15 +11,14 @@ Recitation 1
  * **Kernel** 
  	- userspace -> Kernel -> Harddisk
  	- open a file in the harddisk, need to go through Kernel
- 		function open() call Kernel --> Kernel with some function system call --> Harddisk
+ 		- function open() call Kernel --> Kernel with some function system call --> Harddisk
 
 * **Userspace** 
-	* on the same machine:
-		-User A  write  programs p1
-		-User B  write  programs p2
-
-	can User A access User B ? no
-	if use some C program to hack Kernel, then you can access all userspace
+	- on the same machine:
+		- User A  write  programs p1
+		- User B  write  programs p2
+		- can User A access User B ? no
+		- if use some C program to hack Kernel, then you can access all userspace
 
 why VM > Linux for writing assignment : when you mess with Kernel, is very dangrous.
 
