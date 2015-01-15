@@ -121,3 +121,25 @@ Lecture
         - Each program gets a small slice of the CPU, then yields the CPU to another program
         - This switching happens often enough that each program still gets a fair percentage of the CPU, and call still make significant progress
         - At the same time, interactive programs like shells are now supported (**INNOVATION**)
+     - **Advantage**
+        - efficient CPU usage
+        - Better isolation - a misbehaving program can't stop other programs from executing
+        - supports interactivity
+    - **Disadvantage**
+        - Switching from one program to another is called a **context switch**
+        - there is **overhead** due to this context switching
+            - with each context switch, the CPU has to save the current state of application 1
+            - and then load the state of the new application 2 when app 2 was last switched out
+        - All of this takes time and no useful work can be done by program during a context switch
+        
+* **Cooperative Multitasking**
+    - How does an OS achieve Multitasking
+         - **Cooperative multitaksing**
+            - voluntarily yield CPU before they're done (1 program wait for another to finish first)
+            - problem with program hogs the CPU, the we are screwed!
+         - **Preemptive multitaksing**
+            - Force programs to release CPU 
+            - OS forces rapid switching between multiple executing programs by setting a hardware timer
+            - The timer periodically interruptes CPU execution, invoking OS scheduler to schedule the next program
+            - Time Slices
+                - Each program is given a short interval on the CPU called a time slice
