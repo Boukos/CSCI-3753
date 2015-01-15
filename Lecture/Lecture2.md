@@ -59,10 +59,55 @@ Lecture
   
 * **Mode changes, How Apps and the OS commucated**
     - System call between user mode(mode bit = 1) and kernel mode (mode bit = 0)
-    - user process exe -> system call -> trap to the OS, interupt the exe of the software -> transfer control to the kernel , execute system call ->handle system call and reset the mode bit to 1 -> return to user from the system call
+         - user process exe -> system call -> trap to the OS, interupt the exe of the software -> transfer control to the kernel , execute system call ->handle system call and reset the mode bit to 1 -> return to user from the system call
+    - the **trap** instrcution is used to switch from user to supervisor mode, thereby enter the OS
+        - trap sets the mode bit to 0
+        - mode bit reset to 1
+    
+* **Trap Table**
+    - The process of indexing into the trap table to jump to the trap handler routine is also called dispatching
+    - the trap table is also called a jump table or a branch table
+    - "A trap is a software interrupt"
 
+* System Call Parameter Passing
+    - Often, more information is required than simply identity of desired system call
+        - exact type and amount of information vary according to OS and call
+    - Three general methods used to pass parameters to the OS
+        - Simplest: pass the parameters in registers
+        - **Pointer**: Parameters stored in a block, or table, in memory, and address of block passed as a parameter in register
+        - Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the Operating System.
 
+* Classes of System Calls Invoked by trap
+   * Process control
+        - end, abort
+        - load, execute
+        - fork, create , terminate
+        - get attributes, set
+        - wait for time
+        - wait event
+    * File Management 
+        - create, delete
+        - open , close
+        - read, write, reposition
+        - get attributes, set
+    * Device Management
+        - request device, release
+        - read, write, reposition
+    * Information Management
+        - get time. set
+        - get system data, set
+        - get process, file or device attributes, set
+    * Coomunications
+        - create connection, delete
+        - send messages, receive
+    
+* Stardard C Library Example
+     - C program invoking printf() library call, wich calls write() system call
 
-
+* ** How does an OS support multiple applications?**
+    * Batching of jobs
+    * executing continuously until program is finished
+        - Poor utilization, maybe billions of wasted instruction cycles.(other program has to wait, compares to now day, we can make use of those free memory)
+    * Multiprogramming :)
 
 
