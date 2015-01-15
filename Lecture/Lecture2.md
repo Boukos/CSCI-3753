@@ -111,4 +111,13 @@ Lecture
     - Multiprogramming :) (or Multiprogrammed batch system)
         - much efficient to share CPU
         - Submit your program, called a job,into a job queue, when CPU is availble, OS exe your job.
-        
+        - is not suitable with Interactive applications like the shell program(require waiting finish for programs)
+    - limitation of Multiprogramming
+         - Batch jobs are very non-interative
+            - Don't support a shell application
+            - design jobs to yield much sooner than an I/O block, to give the impression of interactivity
+* **Multitasking**
+    - CPU rapidly switches between multiple programs
+        - Each program gets a small slice of the CPU, then yields the CPU to another program
+        - This switching happens often enough that each program still gets a fair percentage of the CPU, and call still make significant progress
+        - At the same time, interactive programs like shells are now supported (**INNOVATION**)
