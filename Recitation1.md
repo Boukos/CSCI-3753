@@ -55,31 +55,27 @@ to boot from a list of different kernels available on the machine.
 
 
 * **system call code**
-	```c
+	```
 
 	int main()
 	{
 		int x = SYSCALL(318);
 		printf(x)
 	}
- 
+ 	
  	```
 
 
 Homework
 ------------
-	```c
-	
+
 	sys_simadd(int a, int b, int *ret)
 	{
 		printk(a, b) //print log file
 		ret = a+b
 		return 0
 	}
-	
-	```
 
-	```c
 	int main()
 	{
 		a,b,ret
@@ -87,7 +83,7 @@ Homework
 		printf(x); // 0  --> return 0 meaning sucsess
 		print(c); // 30 --> return a value stored in pointer c
 	}
-	```
+
 
 
 
