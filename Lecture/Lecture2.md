@@ -57,7 +57,8 @@ Lecture
    * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
    * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
   
-
+* **Mode changes, How Apps and the OS commucated**
+    - System call between user mode(mode bit = 1) and kernel mode (mode bit = 0)
 
 
 
