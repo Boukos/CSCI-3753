@@ -24,7 +24,7 @@ Recap
 Lecture
 --------
 
-* Protection in Operating Systems
+* **Protection in Operating Systems**
     - One of an Operating System's main goals is Protection
       - Protect applications from each other
       - Protect OS(kernel) from application
@@ -44,12 +44,12 @@ Lecture
         - Intel 80286 added mode bit in 1982
       
 
-* Kernel Mode vs User Mode
+* **Kernel Mode vs User Mode**
     - Supervisor 
         - Can execute all machine instruction, reference all memory and Kernel runs in this.
     - User
         - screwed.
-* Rings of privilege
+* **Rings of privilege**
    - ring 0 = Kernel
     - ring 1 = Device drivers
     - ring 2 = Device drivers
@@ -57,7 +57,7 @@ Lecture
    * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
    * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
   
-  
+
 
 
 
