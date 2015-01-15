@@ -12,13 +12,27 @@ Enrollment Key: osrocks15
 
 What is an Operating System?
 -----------------------------
-* (over 500 OS!) : Windows, Linux(600 distributions), OS X  && etc
-* Application: Chrome, Office, games etc.
-* I/O : Mouse, Keyboard, Display etc.
+* a layer of software between many applications/diverse hardware and hardware that provides useful services to applications.
 
- What is common across these OSs?
- --------------------------------
- * An operating system is a layer of software between many applications/diverse hardware and hardware that provides useful services to applications.
+System View of Operating System
+---------------------------------
+
+* From the computer’s point of view, the operating system is the program most intimately involved with the hardware. In this context, we can view an operating system as a resource allocator. A computer system has many resources that may be required to solve a problem: CPU time, memory space, file-storage space, I/O devices, and so on. The operating system acts as the manager of these resources. Facing numerous and possibly conflicting requests for resources, the operating system must decide how to allocate them to specific programs and users so that it can operate the computer system efficiently and fairly. As we have seen, resource allocation is especially important where many users access the same mainframe or minicomputer.
+
+* A slightly different view of an operating system emphasizes the need to control the various I/O devices and user programs. An operating system is a control program. A control program manages the execution of user programs to prevent errors and improper use of the computer. It is especially concerned with the operation and control of I/O devices.
+
+Computer System
+----------------------
+* Hardware
+	- the central processing unit ( CPU ), the memory, and the input/output ( I/O ) devices—provides the basic computing resources for the system. 
+
+* Operating System
+	- for a single user, the goal is to maximize the work that the user is performing.In this case, the operating system is designed mostly for ease of use, with some attention paid to performance and none paid to resource utilization (how various hardware and software resources are shared.)
+	- for user who use terminal connected to a mainframe or a minicomputer, other users are accessing the same computer through other terminals.These users share resources and may exchange information. The operating system in such cases is designed to maximize resource utilization — to assure that all available CPU time, memory, and I/O are used efficiently and that no individual user takes more than her fair share.
+
+* Application: Chrome, Office, games etc.
+	- define the ways in which these resources are used to solve users’ computing problems.
+* I/O : Mouse, Keyboard, Display etc.
 
 
 O.S Functionality (OS "Kernel")
