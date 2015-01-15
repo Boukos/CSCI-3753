@@ -143,3 +143,8 @@ Lecture
             - The timer periodically interruptes CPU execution, invoking OS scheduler to schedule the next program
             - Time Slices
                 - Each program is given a short interval on the CPU called a time slice
+            - **Benifits**
+                - Efficient sharing of CPU
+                - Fault isolation solved
+                - Support for long-running jobs
+                - Support for interactive programs
