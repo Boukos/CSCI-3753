@@ -66,7 +66,7 @@ to boot from a list of different kernels available on the machine.
 
 Homework
 -----------------------------------------------------
-Code Example:
+* **Code Example**
 	```c
 	sys_simadd(int a, int b, int *ret)
 	{
@@ -74,6 +74,7 @@ Code Example:
 		ret = a+b
 		return 0
 	}
+	
 	int main()
 	{
 		a,b,ret
@@ -82,11 +83,3 @@ Code Example:
 		print(c); // 30 --> return a value stored in pointer c
 	}
 	```
-
-
-
-
-
-
-
-
