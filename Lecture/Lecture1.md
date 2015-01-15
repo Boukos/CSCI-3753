@@ -14,6 +14,12 @@ What is an Operating System?
 -----------------------------
 * a layer of software between many applications/diverse hardware and hardware that provides useful services to applications.
 
+System View of Operating System
+---------------------------------
+
+* From the computer’s point of view, the operating system is the program most intimately involved with the hardware. In this context, we can view an operating system as a resource allocator. A computer system has many resources that may be required to solve a problem: CPU time, memory space, file-storage space, I/O devices, and so on. The operating system acts as the manager of these resources. Facing numerous and possibly conflicting requests for resources, the operating system must decide how to allocate them to specific programs and users so that it can operate the computer system efficiently and fairly. As we have seen, resource allocation is especially important where many users access the same mainframe or minicomputer.
+
+
 Computer System
 ----------------------
 * Hardware
