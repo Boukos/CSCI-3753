@@ -1,7 +1,7 @@
 Lecture 1 - Introduction
 ------------------------
 
-Office Hour: Tuesday 1:30 - 2:30 pm
+Office Hour: Tuesday 1:30 - 2:30 pm 
 			 Wednesday 1:30 - 2:30 pm
 
 Moodle （Grading info）
