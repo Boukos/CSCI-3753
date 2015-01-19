@@ -85,6 +85,7 @@ Lecture
      * Stardard C Library Example
      - C program invoking printf() library call, wich calls write() system call
 
+
 * ** How does an OS support multiple applications?**
     - Batching of jobs
     - executing continuously until program is finished
@@ -96,6 +97,7 @@ Lecture
     - limitation of Multiprogramming
          - Batch jobs are very non-interative
             - Don't support a shell application
+
 
 
 * **Multitasking**
