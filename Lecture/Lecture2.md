@@ -25,10 +25,10 @@ Lecture
 --------
 
 * **Protection in Operating Systems**
-    - One of an Operating System's main goals is Protection
+    - One of an Operating System's main goals is **Protection**
       - Protect applications from each other
       - Protect OS(kernel) from application
-    - 1. Preventing application from writing into privileged memory
+    - 1. Preventing application from **writing into privileged memory**
         - Memory protection via VM: 
            - Recall that an executable only has virtual address.
            - These are translated into physical memory addresses at run time by a page table
@@ -77,29 +77,7 @@ Lecture
         - **Pointer**: Parameters stored in a block, or table, in memory, and address of block passed as a parameter in register
         - Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the Operating System.
 
-* Classes of System Calls Invoked by trap
-   * Process control
-        - end, abort
-        - load, execute
-        - fork, create , terminate
-        - get attributes, set
-        - wait for time
-        - wait event
-    * File Management 
-        - create, delete
-        - open , close
-        - read, write, reposition
-        - get attributes, set
-    * Device Management
-        - request device, release
-        - read, write, reposition
-    * Information Management
-        - get time. set
-        - get system data, set
-        - get process, file or device attributes, set
-    * Coomunications
-        - create connection, delete
-        - send messages, receive
+
     
 * Stardard C Library Example
      - C program invoking printf() library call, wich calls write() system call
