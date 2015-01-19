@@ -5,6 +5,8 @@ Lecture 2: Kernel Mode, Traps, System Calls, Multitasking
     - Add a system call to Linux
     
 * Read chapters 1-2 & 13
+
+
 **************************************
 
 Recap
@@ -61,7 +63,8 @@ Lecture
     
 * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
 * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
-  
+
+************************************
 
 
 * **Mode changes, How Apps and the OS commucated**
@@ -70,12 +73,15 @@ Lecture
     - the **trap** instrcution is used to switch from user to supervisor mode, thereby enter the OS
         - trap sets the mode bit to 0
         - mode bit reset to 1
-    
+
+************************************
+
 * **Trap Table**
     - The process of indexing into the trap table to jump to the trap handler routine is also called dispatching
     - the trap table is also called a jump table or a branch table
     - "A trap is a software interrupt"
 
+************************************
 
 * **System Call Parameter Passing**
     - Often, more information is required than simply identity of desired system call
@@ -87,6 +93,7 @@ Lecture
      * Stardard C Library Example
         - C program invoking printf() library call, wich calls write() system call
 
+************************************
 
 * **How does an OS support multiple applications?**
     - Batching of jobs
@@ -99,6 +106,8 @@ Lecture
     - limitation of Multiprogramming
          - Batch jobs are very non-interative
          - Don't support a shell application
+
+************************************
 
 * **Multitasking**
 
@@ -116,7 +125,9 @@ Lecture
             - with each context switch, the CPU has to save the current state of application 1
             - and then load the state of the new application 2 when app 2 was last switched out
         - All of this takes time and no useful work can be done by program during a context switch
-        
+       
+       
+************************************ 
 
 * **Cooperative Multitasking**
     - How does an OS achieve Multitasking
