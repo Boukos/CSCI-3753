@@ -34,6 +34,32 @@ Computer System
 	- define the ways in which these resources are used to solve users’ computing problems.
 * **I/O** : Mouse, Keyboard, Display etc.
 
+
+Storage Structure
+-----------------
+* **volatile storage** loses its contents when the power to the device is removed. In the absence of expensive battery and generator backup systems, data must be written to **nonvolatile storage** for safekeeping.
+
+
+
+|Storage Hierarchy|
+|----------------|
+|register|
+|cache           |
+|main memory     |
+|solid-state disk|
+|magnetic disk   |
+|optical disk    |
+
+* The wide variety of storage systems can be organized in a hierarchy according to speed and cost. The higher levels are expensive, but they are fast. As we move down the hierarchy, the cost per bit generally decreases, whereas the access time generally increases.
+
+I/O Structure
+-------------
+* **device driver**: software that understands the device controller and provides the rest of the operating system with a uniform interface to the device
+* **device controller**: The controller is the hardware(chips) that controls the communication between the system and the peripheral(外围) drive unit (for example : a disc drive). 
+* **register** : The amount of information(storage) that a processor can process at once.
+
+* To start an I/O operation, the device driver loads the appropriate registers within the device controller. The device controller, in turn, examines the contents of these registers to determine what action to take (such as “read a character from the keyboard”). The controller starts the transfer of data from the device to its local buffer. Once the transfer of data is complete, the device controller informs the device driver via an interrupt that it has finished its operation. The device driver then returns control to the operating system, possibly returning the data or a pointer to the data if the operation was a read. For other operations, the device driver returns status information.
+
 Kernel
 -------
 * A more common definition, and the one that we usually follow, is that the operating system is the one program running at all times on the computer—usually called the kernel. 
@@ -55,22 +81,7 @@ O.S Components
 	- device management (applications to display)
 	- others ...
 
-Storage Structure
------------------
-* **volatile storage** loses its contents when the power to the device is removed. In the absence of expensive battery and generator backup systems, data must be written to **nonvolatile storage** for safekeeping.
 
-
-
-|Storage Hierarchy|
-|----------------|
-|register|
-|cache           |
-|main memory     |
-|solid-state disk|
-|magnetic disk   |
-|optical disk    |
-
-* The wide variety of storage systems can be organized in a hierarchy according to speed and cost. The higher levels are expensive, but they are fast. As we move down the hierarchy, the cost per bit generally decreases, whereas the access time generally increases.
 
 
 Monolithic vs Microkernel OS Architectures
