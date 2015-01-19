@@ -34,6 +34,11 @@ Computer System
 	- define the ways in which these resources are used to solve users’ computing problems.
 * I/O : Mouse, Keyboard, Display etc.
 
+Kernel
+-------
+* A more common definition, and the one that we usually follow, is that the operating system is the one program running at all times on the computer—usually called the kernel. 
+	- Along with the kernel, there are two other types of programs: system programs, which are associated with the operating system but are not necessarily part of the kernel, and application programs, which include all programs not associated with the operation of the system.
+
 
 O.S Functionality (OS "Kernel")
 ------------------------------------
