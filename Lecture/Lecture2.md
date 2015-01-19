@@ -75,7 +75,7 @@ Lecture
     - "A trap is a software interrupt"
 
 
-* ** System Call Parameter Passing**
+* **System Call Parameter Passing**
     - Often, more information is required than simply identity of desired system call
         - exact type and amount of information vary according to OS and call
     - Three general methods used to pass parameters to the OS
@@ -85,7 +85,8 @@ Lecture
      * Stardard C Library Example
         - C program invoking printf() library call, wich calls write() system call
 
-* **How does an OS support multiple applications**
+
+* **How does an OS support multiple applications?**
     - Batching of jobs
     - executing continuously until program is finished
         - Poor utilization, maybe billions of wasted instruction cycles.(other program has to wait, compares to now day, we can make use of those free memory)
