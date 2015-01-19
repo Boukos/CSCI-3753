@@ -57,7 +57,7 @@ I/O Structure
 * **device driver**: software that understands the device controller and provides the rest of the operating system with a uniform interface to the device
 * **device controller**: The controller is the hardware(chips) that controls the communication between the system and the peripheral(外围) drive unit (for example : a disc drive). 
 * **register** : The amount of information(storage) that a processor can process at once.
-
+---------------------------------------------------------------------------------------------
 * To start an I/O operation, the device driver loads the appropriate registers within the device controller. The device controller, in turn, examines the contents of these registers to determine what action to take (such as “read a character from the keyboard”). The controller starts the transfer of data from the device to its local buffer. Once the transfer of data is complete, the device controller informs the device driver via an interrupt that it has finished its operation. The device driver then returns control to the operating system, possibly returning the data or a pointer to the data if the operation was a read. For other operations, the device driver returns status information.
 
 Kernel
