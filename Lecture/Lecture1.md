@@ -70,7 +70,7 @@ Storage Structure
 |magnetic disk   |
 |optical disk    |
 
-* The wide variety of storage systems can be organized in a hierarchy (Figure 1.4) according to speed and cost. The higher levels are expensive, but they are fast. As we move down the hierarchy, the cost per bit generally decreases, whereas the access time generally increases.
+* The wide variety of storage systems can be organized in a hierarchy according to speed and cost. The higher levels are expensive, but they are fast. As we move down the hierarchy, the cost per bit generally decreases, whereas the access time generally increases.
 
 
 Monolithic vs Microkernel OS Architectures
@@ -78,6 +78,9 @@ Monolithic vs Microkernel OS Architectures
 * Monolithic kernel is highly complex and contains many components (linux)
 * Microkernel has minimal functionality, perhaps only vm, scheduler, and IPC message passing (old MacOX)
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 Distributed OS
