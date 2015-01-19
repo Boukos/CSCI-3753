@@ -60,6 +60,7 @@ I/O Structure
 
 *********************************************************************
 |To start an I/O operation:|
+|----------------------------|
 |- 1. the device driver loads the appropriate registers within the device controller.|
 |- 2. The device controller, in turn, examines the contents of these registers to determine what action to take (such as “read a character from the keyboard”).|
 |- 3. The controller starts the transfer of data from the device to its local buffer.|
