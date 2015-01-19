@@ -24,8 +24,7 @@ Recap
 Lecture
 --------
 
- **Protection in Operating Systems**
- --------------------------------------
+* **Protection in Operating Systems**
     - One of an Operating System's main goals is **Protection**
       - Protect applications from each other
       - Protect OS(kernel) from application
@@ -45,41 +44,52 @@ Lecture
         - Intel 80286 added mode bit in 1982
       
 
- **Kernel Mode vs User Mode**
-  --------------------------------------
+* **Kernel Mode vs User Mode**
     - Supervisor 
         - Can execute all machine instruction, reference all memory and Kernel runs in this.
     - User
         - screwed.
+<<<<<<< HEAD
 
 
  **Rings of privilege**
 --------------------------------------------------
     - ring 0 = Kernel
+=======
+* **Rings of privilege**
+   - ring 0 = Kernel
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
     - ring 1 = Device drivers
     - ring 2 = Device drivers
     - ring 3 = Applications
     * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
     * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
   
+<<<<<<< HEAD
 
  **Mode changes, How Apps and the OS commucated**
  -------------------------------------------------
+=======
+* **Mode changes, How Apps and the OS commucated**
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
     - System call between user mode(mode bit = 1) and kernel mode (mode bit = 0)
          - user process exe -> system call -> trap to the OS, interupt the exe of the software -> transfer control to the kernel , execute system call ->handle system call and reset the mode bit to 1 -> return to user from the system call
     - the **trap** instrcution is used to switch from user to supervisor mode, thereby enter the OS
         - trap sets the mode bit to 0
         - mode bit reset to 1
     
- **Trap Table**
---------------------------------------
+* **Trap Table**
     - The process of indexing into the trap table to jump to the trap handler routine is also called dispatching
     - the trap table is also called a jump table or a branch table
     - "A trap is a software interrupt"
 
+<<<<<<< HEAD
 
 ** System Call Parameter Passing**
   --------------------------------------
+=======
+* System Call Parameter Passing
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
     - Often, more information is required than simply identity of desired system call
         - exact type and amount of information vary according to OS and call
     - Three general methods used to pass parameters to the OS
@@ -89,8 +99,7 @@ Lecture
      * Stardard C Library Example
      - C program invoking printf() library call, wich calls write() system call
 
- ** How does an OS support multiple applications?**
-  --------------------------------------
+* ** How does an OS support multiple applications?**
     - Batching of jobs
     - executing continuously until program is finished
         - Poor utilization, maybe billions of wasted instruction cycles.(other program has to wait, compares to now day, we can make use of those free memory)
@@ -102,9 +111,13 @@ Lecture
          - Batch jobs are very non-interative
             - Don't support a shell application
             - design jobs to yield much sooner than an I/O block, to give the impression of interactivity
+<<<<<<< HEAD
             
  **Multitasking**
  --------------------------------------
+=======
+* **Multitasking**
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
     - CPU rapidly switches between multiple programs
         - Each program gets a small slice of the CPU, then yields the CPU to another program
         - This switching happens often enough that each program still gets a fair percentage of the CPU, and call still make significant progress
@@ -120,9 +133,13 @@ Lecture
             - and then load the state of the new application 2 when app 2 was last switched out
         - All of this takes time and no useful work can be done by program during a context switch
         
+<<<<<<< HEAD
 
  **Cooperative Multitasking**
  --------------------------------------
+=======
+* **Cooperative Multitasking**
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
     - How does an OS achieve Multitasking
          - **Cooperative multitaksing**
             - voluntarily yield CPU before they're done (1 program wait for another to finish first)
