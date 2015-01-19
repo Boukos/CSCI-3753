@@ -76,7 +76,6 @@ Lecture
 
 
 * ** System Call Parameter Passing**
-
     - Often, more information is required than simply identity of desired system call
         - exact type and amount of information vary according to OS and call
     - Three general methods used to pass parameters to the OS
@@ -118,7 +117,6 @@ Lecture
         
 
 * **Cooperative Multitasking**
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
     - How does an OS achieve Multitasking
          - **Cooperative multitaksing**
             - voluntarily yield CPU before they're done (1 program wait for another to finish first)
