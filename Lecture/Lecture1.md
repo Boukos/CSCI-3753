@@ -61,7 +61,6 @@ Storage Structure
 * *Storage-device hierarchy*
 
 |registers       |
-|----------------|
 |cache           |
 |main memory     |
 |solid-state disk|
