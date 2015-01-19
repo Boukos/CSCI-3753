@@ -58,7 +58,8 @@ O.S Components
 Storage Structure
 -----------------
 * **volatile storage** loses its contents when the power to the device is removed. In the absence of expensive battery and generator backup systems, data must be written to **nonvolatile storage** for safekeeping.
-* *Storage-device hierarchy*
+
+
 
 |Storage Hierarchy|
 |----------------|
@@ -69,12 +70,8 @@ Storage Structure
 |magnetic disk   |
 |optical disk    |
 
+* The wide variety of storage systems can be organized in a hierarchy (Figure 1.4) according to speed and cost. The higher levels are expensive, but they are fast. As we move down the hierarchy, the cost per bit generally decreases, whereas the access time generally increases.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 
 Monolithic vs Microkernel OS Architectures
 ------------------------------------------
