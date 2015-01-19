@@ -52,7 +52,7 @@ Lecture
 
 ************************************
 
-|**Rings of privilege**|
+    |Rings of privilege|
     |----------------|
     |ring 0 : Kernel|
     |ring 1 : Device drivers|
