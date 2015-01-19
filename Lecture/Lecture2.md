@@ -50,15 +50,17 @@ Lecture
     - User
         - screwed.
 
+************************************
 
-
-* **Rings of privilege**
-    - ring 0 = Kernel
-    - ring 1 = Device drivers
-    - ring 2 = Device drivers
-    - ring 3 = Applications
-    * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
-    * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
+|**Rings of privilege**|
+    |----------------|
+    |ring 0 : Kernel|
+    |ring 1 : Device drivers|
+    |ring 2 : Device drivers|
+    |ring 3 : Applications|
+    
+* VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
+* OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
   
 
 
