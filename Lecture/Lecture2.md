@@ -52,8 +52,9 @@ Lecture
     - User
         - screwed.
 
+
  **Rings of privilege**
- -----------------------
+-------------------------------------------------
    - ring 0 = Kernel
     - ring 1 = Device drivers
     - ring 2 = Device drivers
@@ -61,6 +62,7 @@ Lecture
    * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
    * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
   
+
  **Mode changes, How Apps and the OS commucated**
  -------------------------------------------------
     - System call between user mode(mode bit = 1) and kernel mode (mode bit = 0)
@@ -74,6 +76,7 @@ Lecture
     - The process of indexing into the trap table to jump to the trap handler routine is also called dispatching
     - the trap table is also called a jump table or a branch table
     - "A trap is a software interrupt"
+
 
  System Call Parameter Passing
   --------------------------------------
@@ -102,6 +105,7 @@ Lecture
          - Batch jobs are very non-interative
             - Don't support a shell application
             - design jobs to yield much sooner than an I/O block, to give the impression of interactivity
+            
  **Multitasking**
  --------------------------------------
     - CPU rapidly switches between multiple programs
@@ -119,6 +123,7 @@ Lecture
             - and then load the state of the new application 2 when app 2 was last switched out
         - All of this takes time and no useful work can be done by program during a context switch
         
+
  **Cooperative Multitasking**
 --------------------------------------
     - How does an OS achieve Multitasking
