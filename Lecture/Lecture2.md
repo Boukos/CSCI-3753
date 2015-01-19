@@ -85,8 +85,7 @@ Lecture
      * Stardard C Library Example
         - C program invoking printf() library call, wich calls write() system call
 
-
-* **How does an OS support multiple applications?**
+* **How does an OS support multiple applications**
     - Batching of jobs
     - executing continuously until program is finished
         - Poor utilization, maybe billions of wasted instruction cycles.(other program has to wait, compares to now day, we can make use of those free memory)
