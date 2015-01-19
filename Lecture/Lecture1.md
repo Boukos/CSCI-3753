@@ -55,11 +55,22 @@ O.S Components
 	- device management (applications to display)
 	- others ...
 
+Storage Structure
+-----------------
+* **volatile storage** loses its contents when the power to the device is removed. In the absence of expensive battery and generator backup systems, data must be written to **nonvolatile storage** for safekeeping.
+* *Storage-device hierarchy*
+|registers|
+|cache|
+|main memory|
+|solid-state disk|
+|magnetic disk|
+|optical disk|
 
 Monolithic vs Microkernel OS Architectures
 ------------------------------------------
 * Monolithic kernel is highly complex and contains many components (linux)
 * Microkernel has minimal functionality, perhaps only vm, scheduler, and IPC message passing (old MacOX)
+
 
 
 Distributed OS
