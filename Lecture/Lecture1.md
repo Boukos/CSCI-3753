@@ -59,12 +59,12 @@ I/O Structure
 * **register** : The amount of information(storage) that a processor can process at once.
 
 *********************************************************************
-* To start an I/O operation:
-	- 1. the device driver loads the appropriate registers within the device controller. 
-	- 2. The device controller, in turn, examines the contents of these registers to determine what action to take (such as “read a character from the keyboard”).
-	- 3. The controller starts the transfer of data from the device to its local buffer.
-	- 4. Once the transfer of data is complete, the device controller informs the device driver via an interrupt that it has finished its operation. 
-	- 5. The device driver then returns control to the operating system, possibly returning the data or a pointer to the data if the operation was a read. For other operations, the device driver returns status information.
+|To start an I/O operation:|
+|- 1. the device driver loads the appropriate registers within the device controller.|
+|- 2. The device controller, in turn, examines the contents of these registers to determine what action to take (such as “read a character from the keyboard”).|
+|- 3. The controller starts the transfer of data from the device to its local buffer.|
+|- 4. Once the transfer of data is complete, the device controller informs the device driver via an interrupt that it has finished its operation. |
+|- 5. The device driver then returns control to the operating system, possibly returning the data or a pointer to the data if the operation was a read. For other operations, the device driver returns status information.|
 
 *********************************************************************
 
