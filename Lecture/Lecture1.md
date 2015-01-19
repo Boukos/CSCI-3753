@@ -60,6 +60,7 @@ Storage Structure
 * **volatile storage** loses its contents when the power to the device is removed. In the absence of expensive battery and generator backup systems, data must be written to **nonvolatile storage** for safekeeping.
 * *Storage-device hierarchy*
 |registers|
+|----------|
 |cache|
 |main memory|
 |solid-state disk|
