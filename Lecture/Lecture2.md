@@ -54,13 +54,13 @@ Lecture
 
 
  **Rings of privilege**
--------------------------------------------------
-   - ring 0 = Kernel
+--------------------------------------------------
+    - ring 0 = Kernel
     - ring 1 = Device drivers
     - ring 2 = Device drivers
     - ring 3 = Applications
-   * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
-   * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
+    * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
+    * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
   
 
  **Mode changes, How Apps and the OS commucated**
@@ -78,7 +78,7 @@ Lecture
     - "A trap is a software interrupt"
 
 
- System Call Parameter Passing
+** System Call Parameter Passing**
   --------------------------------------
     - Often, more information is required than simply identity of desired system call
         - exact type and amount of information vary according to OS and call
@@ -86,10 +86,7 @@ Lecture
         - Simplest: pass the parameters in registers
         - **Pointer**: Parameters stored in a block, or table, in memory, and address of block passed as a parameter in register
         - Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the Operating System.
-
-
-    
-* Stardard C Library Example
+     * Stardard C Library Example
      - C program invoking printf() library call, wich calls write() system call
 
  ** How does an OS support multiple applications?**
@@ -125,7 +122,7 @@ Lecture
         
 
  **Cooperative Multitasking**
---------------------------------------
+ --------------------------------------
     - How does an OS achieve Multitasking
          - **Cooperative multitaksing**
             - voluntarily yield CPU before they're done (1 program wait for another to finish first)
