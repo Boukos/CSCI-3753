@@ -1,5 +1,5 @@
 Lecture 2: Kernel Mode, Traps, System Calls, Multitasking
----------------------------------------------------------- 
+----------------------------------------------------------
 
 * Announcements : PA #1 due Monday Jan 26  by 8 am
     - Add a system call to Linux
