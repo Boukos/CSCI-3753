@@ -83,7 +83,7 @@ Lecture
         - **Pointer**: Parameters stored in a block, or table, in memory, and address of block passed as a parameter in register
         - Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the Operating System.
      * Stardard C Library Example
-     - C program invoking printf() library call, wich calls write() system call
+        - C program invoking printf() library call, wich calls write() system call
 
 
 * ** How does an OS support multiple applications?**
@@ -96,7 +96,7 @@ Lecture
         - is not suitable with Interactive applications like the shell program(require waiting finish for programs)
     - limitation of Multiprogramming
          - Batch jobs are very non-interative
-            - Don't support a shell application
+         - Don't support a shell application
 
 
 
