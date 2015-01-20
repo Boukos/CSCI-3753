@@ -70,9 +70,9 @@ Device System Call Interface
 -----------------------------
 * Block vs character devices
   - Character devices generate or process data as a linear stream of bytes
-   - keyboards, mice , audio, modems, printers
+    - keyboards, mice , audio, modems, printers
   - Block devices read/write data in discrete blocks
-   - disks
+    - disks
 
 
 
