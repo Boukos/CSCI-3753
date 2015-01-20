@@ -22,10 +22,10 @@ Lecture
 Multitasking & Abstract Machines
 ----------------------------------
 * CPU is time-multiplexed between multiple programs
- - Programs share the CPU
+  - Programs share the CPU
 
 * Memory is space-multiplexed between multiple programs
- - programs share RAM
+  - programs share RAM
  
 * Each program thus sees its own abstract machine
 
