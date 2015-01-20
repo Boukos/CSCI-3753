@@ -56,3 +56,26 @@ Classes of Exceptions
 Trap|Intentional exception, i.e "Software Interrupt"|System calls| Always returns to next instuction
 Fault|Potentially recoverable error|Divide by 0, stack overflow, invalid opcode,page fault, seg fault| might return to current instaction|
 |Interupt|
+
+******************************************
+
+Device Management Organization
+--------------------------------
+* by certain registor from the device controller, it will trigger the corresponding device driver
+* Device System Call Interface
+  - Create a simple standard interface to access most devices (open,close,read,write etc..)
+  
+
+Device System Call Interface
+-----------------------------
+ Block vs character devices
+ ------------------------------
+ * Character devices generate or process data as a linear stream of bytes
+  - keyboards, mice , audio, modems, printers
+ * Block devices read/write data in discrete blocks
+  - disks
+
+
+
+
+
