@@ -61,7 +61,6 @@ Fault|Potentially recoverable error|Divide by 0, stack overflow, invalid opcode,
 
 Device Management Organization
 --------------------------------
-* by certain registor from the device controller, it will trigger the corresponding device driver
 * Device System Call Interface
   - Create a simple standard interface to access most devices (open,close,read,write etc..)
   
@@ -71,8 +70,41 @@ Device System Call Interface
 * Block vs character devices
   - Character devices generate or process data as a linear stream of bytes
     - keyboards, mice , audio, modems, printers
-  - Block devices read/write data in discrete blocks
+  - Block devices read/write data in discrete blocks(process put on wait queue until I/O read or write finished)
     - disks
+
+******************************************
+
+Queuing of Device Requests
+----------------------------
+* More than one application may want access to the same device
+* Device requests may be reordered in some cases
+
+******************************************
+
+Device Drivers 
+------------------
+* Support the device system call interface function open, read etc. for that device
+* Interact directly with the device controllers
+  - Know the details of what commands the device can handle, how to set/get bits in device controller registers
+  - by certain registor from the device controller, it will trigger the corresponding device driver
+* Control flows
+
+******************************************
+
+Device Controller
+------------------------------------
+* **Lecture picture of Device controller states**
+
+Polling I/O: A write Example (What happened??? ASK)
+---------------------------
+```
+while(deviceN.busy || deviceN.done) //Check if it's in idle state
+deviceN.data[0] = <value to write> //set it to idld state
+questio
+
+```
+
 
 
 
