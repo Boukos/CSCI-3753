@@ -23,16 +23,53 @@ System View of Operating System
 
 Computer System
 ----------------------
-* Hardware
+* **Hardware**
 	- the central processing unit ( CPU ), the memory, and the input/output ( I/O ) devices—provides the basic computing resources for the system. 
 
-* Operating System
+* **Operating System**
 	- for a single user, the goal is to maximize the work that the user is performing.In this case, the operating system is designed mostly for ease of use, with some attention paid to performance and none paid to resource utilization (how various hardware and software resources are shared.)
 	- for user who use terminal connected to a mainframe or a minicomputer, other users are accessing the same computer through other terminals.These users share resources and may exchange information. The operating system in such cases is designed to maximize resource utilization — to assure that all available CPU time, memory, and I/O are used efficiently and that no individual user takes more than her fair share.
 
-* Application: Chrome, Office, games etc.
+* **Application**: Chrome, Office, games etc.
 	- define the ways in which these resources are used to solve users’ computing problems.
-* I/O : Mouse, Keyboard, Display etc.
+* **I/O** : Mouse, Keyboard, Display etc.
+
+
+Storage Structure
+-----------------
+* **volatile storage** loses its contents when the power to the device is removed. In the absence of expensive battery and generator backup systems, data must be written to **nonvolatile storage** for safekeeping.
+
+
+
+|Storage Hierarchy|
+|----------------|
+|register|
+|cache           |
+|main memory     |
+|solid-state disk|
+|magnetic disk   |
+|optical disk    |
+
+* The wide variety of storage systems can be organized in a hierarchy according to speed and cost. The higher levels are expensive, but they are fast. As we move down the hierarchy, the cost per bit generally decreases, whereas the access time generally increases.
+
+I/O Structure
+-------------
+* **device driver**: software that understands the device controller and provides the rest of the operating system with a uniform interface to the device
+* **device controller**: The controller is the hardware(chips) that controls the communication between the system and the peripheral(外围) drive unit (for example : a disc drive). 
+* **register** : The amount of information(storage) that a processor can process at once.
+
+*********************************************************************
+|To start an I/O operation:|
+|----------------------------|
+|- 1. the device driver loads the appropriate registers within the device controller.|
+|- 2. The device controller, in turn, examines the contents of these registers to determine what action to take (such as “read a character from the keyboard”).|
+|- 3. The controller starts the transfer of data from the device to its local buffer.|
+|- 4. Once the transfer of data is complete, the device controller informs the device driver via an interrupt that it has finished its operation. |
+|- 5. The device driver then returns control to the operating system, possibly returning the data or a pointer to the data if the operation was a read. For other operations, the device driver returns status information.|
+
+*********************************************************************
+
+* This form of interrupt-driven I/O is fine for moving small amounts of data but can produce high overhead when used for bulk data movement such as disk I/O. To solve this problem, **direct memory access (DMA)** is used. After setting up buffers, pointers, and counters for the I/O device, the device controller transfers an entire block of data directly to or from its own buffer storage to memory, with no intervention by the CPU. Only one interrupt is generated per block, to tell the device driver that the operation has completed, rather than the one interrupt per byte generated for low-speed devices. While the device controller is performing these operations, the CPU is available to accomplish other work.
 
 Kernel
 -------
@@ -56,10 +93,14 @@ O.S Components
 	- others ...
 
 
+
+
 Monolithic vs Microkernel OS Architectures
 ------------------------------------------
 * Monolithic kernel is highly complex and contains many components (linux)
 * Microkernel has minimal functionality, perhaps only vm, scheduler, and IPC message passing (old MacOX)
+
+
 
 
 Distributed OS

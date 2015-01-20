@@ -5,6 +5,8 @@ Lecture 2: Kernel Mode, Traps, System Calls, Multitasking
     - Add a system call to Linux
     
 * Read chapters 1-2 & 13
+
+
 **************************************
 
 Recap
@@ -51,6 +53,7 @@ Lecture
         - screwed.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
  **Rings of privilege**
@@ -70,26 +73,46 @@ Lecture
   
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
 
- **Mode changes, How Apps and the OS commucated**
- -------------------------------------------------
-=======
+************************************
+
+|Rings of privilege|
+|----------------|
+|ring 0 : Kernel|
+|ring 1 : Device drivers|
+|ring 2 : Device drivers|
+|ring 3 : Applications|
+    
+* VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
+* OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
+
+************************************
+
+
 * **Mode changes, How Apps and the OS commucated**
+<<<<<<< HEAD
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
 =======
 * **Mode changes, How Apps and the OS commucated**
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
+=======
+>>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
     - System call between user mode(mode bit = 1) and kernel mode (mode bit = 0)
          - user process exe -> system call -> trap to the OS, interupt the exe of the software -> transfer control to the kernel , execute system call ->handle system call and reset the mode bit to 1 -> return to user from the system call
     - the **trap** instrcution is used to switch from user to supervisor mode, thereby enter the OS
         - trap sets the mode bit to 0
         - mode bit reset to 1
-    
+
+************************************
+
 * **Trap Table**
     - The process of indexing into the trap table to jump to the trap handler routine is also called dispatching
     - the trap table is also called a jump table or a branch table
     - "A trap is a software interrupt"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -101,6 +124,11 @@ Lecture
 =======
 * System Call Parameter Passing
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
+=======
+************************************
+
+* **System Call Parameter Passing**
+>>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
     - Often, more information is required than simply identity of desired system call
         - exact type and amount of information vary according to OS and call
     - Three general methods used to pass parameters to the OS
@@ -108,9 +136,11 @@ Lecture
         - **Pointer**: Parameters stored in a block, or table, in memory, and address of block passed as a parameter in register
         - Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the Operating System.
      * Stardard C Library Example
-     - C program invoking printf() library call, wich calls write() system call
+        - C program invoking printf() library call, wich calls write() system call
 
-* ** How does an OS support multiple applications?**
+************************************
+
+* **How does an OS support multiple applications?**
     - Batching of jobs
     - executing continuously until program is finished
         - Poor utilization, maybe billions of wasted instruction cycles.(other program has to wait, compares to now day, we can make use of those free memory)
@@ -120,6 +150,7 @@ Lecture
         - is not suitable with Interactive applications like the shell program(require waiting finish for programs)
     - limitation of Multiprogramming
          - Batch jobs are very non-interative
+<<<<<<< HEAD
             - Don't support a shell application
             - design jobs to yield much sooner than an I/O block, to give the impression of interactivity
 <<<<<<< HEAD
@@ -133,6 +164,14 @@ Lecture
 =======
 * **Multitasking**
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
+=======
+         - Don't support a shell application
+
+************************************
+
+* **Multitasking**
+
+>>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
     - CPU rapidly switches between multiple programs
         - Each program gets a small slice of the CPU, then yields the CPU to another program
         - This switching happens often enough that each program still gets a fair percentage of the CPU, and call still make significant progress
@@ -147,18 +186,24 @@ Lecture
             - with each context switch, the CPU has to save the current state of application 1
             - and then load the state of the new application 2 when app 2 was last switched out
         - All of this takes time and no useful work can be done by program during a context switch
+<<<<<<< HEAD
         
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+       
+       
+************************************ 
+>>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
 
- **Cooperative Multitasking**
- --------------------------------------
-=======
 * **Cooperative Multitasking**
+<<<<<<< HEAD
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
 =======
 * **Cooperative Multitasking**
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
+=======
+>>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
     - How does an OS achieve Multitasking
          - **Cooperative multitaksing**
             - voluntarily yield CPU before they're done (1 program wait for another to finish first)
