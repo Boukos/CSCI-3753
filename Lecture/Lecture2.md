@@ -51,30 +51,7 @@ Lecture
         - Can execute all machine instruction, reference all memory and Kernel runs in this.
     - User
         - screwed.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
- **Rings of privilege**
---------------------------------------------------
-    - ring 0 = Kernel
-=======
-=======
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-* **Rings of privilege**
-   - ring 0 = Kernel
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-    - ring 1 = Device drivers
-    - ring 2 = Device drivers
-    - ring 3 = Applications
-    * VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
-    * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
-  
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
 
 ************************************
 
@@ -155,17 +132,7 @@ Lecture
             - design jobs to yield much sooner than an I/O block, to give the impression of interactivity
 <<<<<<< HEAD
 <<<<<<< HEAD
-            
- **Multitasking**
- --------------------------------------
-=======
-* **Multitasking**
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-=======
-* **Multitasking**
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-=======
-         - Don't support a shell application
+
 
 ************************************
 
