@@ -50,12 +50,15 @@ Lecture
     - User
         - screwed.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
  **Rings of privilege**
 --------------------------------------------------
     - ring 0 = Kernel
 =======
+=======
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
 * **Rings of privilege**
    - ring 0 = Kernel
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
@@ -66,9 +69,13 @@ Lecture
     * OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
   
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  **Mode changes, How Apps and the OS commucated**
  -------------------------------------------------
+=======
+* **Mode changes, How Apps and the OS commucated**
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
 =======
 * **Mode changes, How Apps and the OS commucated**
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
@@ -84,9 +91,13 @@ Lecture
     - "A trap is a software interrupt"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ** System Call Parameter Passing**
   --------------------------------------
+=======
+* System Call Parameter Passing
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
 =======
 * System Call Parameter Passing
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
@@ -112,9 +123,13 @@ Lecture
             - Don't support a shell application
             - design jobs to yield much sooner than an I/O block, to give the impression of interactivity
 <<<<<<< HEAD
+<<<<<<< HEAD
             
  **Multitasking**
  --------------------------------------
+=======
+* **Multitasking**
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
 =======
 * **Multitasking**
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
@@ -134,9 +149,13 @@ Lecture
         - All of this takes time and no useful work can be done by program during a context switch
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  **Cooperative Multitasking**
  --------------------------------------
+=======
+* **Cooperative Multitasking**
+>>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
 =======
 * **Cooperative Multitasking**
 >>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
