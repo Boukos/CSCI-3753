@@ -41,8 +41,18 @@ Von Neumann Computer Architecture
 
 Modern Computer Archiecture
 -----------------------------
-
+* **Insert the picture**
 * CPU Bus interface <-system bus->**I/O bridge** <-memory bus-> Main memory
 * I/O bridge also connect to I/O bus
+* Bus interface received interupt from I/O and decide to execute them
 
+******************************************
 
+Classes of Exceptions
+----------------------
+* finish it
+|Class|Cause|Examples|Return behavior
+------|-----|--------|--------------|
+Trap|Intentional exception, i.e "Software Interrupt"|System calls| Always returns to next instuction
+Fault|Potentially recoverable error|Divide by 0, stack overflow, invalid opcode,page fault, seg fault| might return to current instaction|
+|Interupt|
