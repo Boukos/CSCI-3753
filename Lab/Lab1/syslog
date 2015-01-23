@@ -1,0 +1,448 @@
+Jan 22 20:14:28 cu-cs-vm rsyslogd: [origin software="rsyslogd" swVersion="7.4.4" x-pid="469" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Jan 22 20:14:37 cu-cs-vm anacron[886]: Job `cron.daily' terminated
+Jan 22 20:14:37 cu-cs-vm anacron[886]: Normal exit (1 job run)
+Jan 22 20:16:42 cu-cs-vm ntpd_intres[2540]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 20:16:42 cu-cs-vm ntpd_intres[2540]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 20:16:42 cu-cs-vm ntpd_intres[2540]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 20:16:42 cu-cs-vm ntpd_intres[2540]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 20:16:42 cu-cs-vm ntpd_intres[2540]: host name not found: ntp.ubuntu.com
+Jan 22 20:17:01 cu-cs-vm CRON[2753]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jan 22 20:21:19 cu-cs-vm uptimed: moving up to position 7: 0 days, 00:20:09
+Jan 22 20:24:45 cu-cs-vm ntpd_intres[2540]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 20:24:45 cu-cs-vm ntpd_intres[2540]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 20:24:45 cu-cs-vm ntpd_intres[2540]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 20:24:45 cu-cs-vm ntpd_intres[2540]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 20:24:45 cu-cs-vm ntpd_intres[2540]: host name not found: ntp.ubuntu.com
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377645] BUG: unable to handle kernel NULL pointer dereference at           (null)
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377654] IP: [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377666] PGD 1c79a067 PUD 1c7f6067 PMD 0 
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377672] Oops: 0002 [#2] SMP 
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377678] Modules linked in: vboxsf(OX) snd_intel8x0 snd_ac97_codec ac97_bus snd_pcm snd_page_alloc snd_seq_midi snd_seq_midi_event snd_rawmidi snd_seq bnep rfcomm snd_timer snd_seq_device bluetooth joydev snd serio_raw vboxvideo(OX) vboxguest(OX) lpc_ich soundcore i2c_piix4 drm parport_pc ppdev lp parport mac_hid btrfs libcrc32c xor raid6_pq hid_generic usbhid hid psmouse ahci e1000 libahci
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377707] CPU: 1 PID: 2836 Comm: a.out Tainted: G      D    OX 3.13.11-ckt12Superyui #3
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377712] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377716] task: ffff8800606c47d0 ti: ffff880026522000 task.ti: ffff880026522000
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377720] RIP: 0010:[<ffffffff81052f5e>]  [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377727] RSP: 0018:ffff880026523f70  EFLAGS: 00010283
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377731] RAX: 00000000bd6514e0 RBX: 0000000000000000 RCX: 00007f3f2bb22e80
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377735] RDX: 0000000000000000 RSI: 00007fffdeb28a78 RDI: 00007fffdeb28a68
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377739] RBP: ffff880026523f78 R08: 00007f3f2bb38560 R09: 0000000000000000
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377743] R10: 00007f3f2bb22e80 R11: 0000000000000206 R12: 0000000000400490
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377747] R13: 00007fffdeb28a60 R14: 0000000000000000 R15: 0000000000000000
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377752] FS:  00007f3f2bd29740(0000) GS:ffff88007fd00000(0000) knlGS:0000000000000000
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377756] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377760] CR2: 0000000000000000 CR3: 00000000264c5000 CR4: 00000000000006e0
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377767] Stack:
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377771]  0000000000400490 00007fffdeb28980 ffffffff8170cf2d 0000000000000206
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377777]  00007f3f2bb22e80 0000000000000000 00007f3f2bb38560 000000000000013f
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377782]  0000000000000000 0000000000000000 00007fffdeb28a78 00007fffdeb28a68
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377787] Call Trace:
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377799]  [<ffffffff8170cf2d>] system_call_fastpath+0x1a/0x1f
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377803] Code: 00 00 55 48 c7 c7 63 2a a3 81 31 c0 48 89 e5 e8 fb 4f 6a 00 31 c0 5d c3 0f 1f 44 00 00 0f 1f 44 00 00 55 8d 04 37 48 89 e5 41 54 <89> 02 31 c0 49 89 d4 53 89 f3 89 fe 48 c7 c7 72 2a a3 81 e8 cc 
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377832] RIP  [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377838]  RSP <ffff880026523f70>
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377842] CR2: 0000000000000000
+Jan 22 20:25:26 cu-cs-vm kernel: [ 1455.377846] ---[ end trace 7e71afc46ecf4aba ]---
+Jan 22 20:31:19 cu-cs-vm uptimed: moving up to position 6: 0 days, 00:30:09
+Jan 22 20:40:48 cu-cs-vm ntpd_intres[2540]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 20:40:48 cu-cs-vm ntpd_intres[2540]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 20:40:48 cu-cs-vm ntpd_intres[2540]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 20:40:48 cu-cs-vm ntpd_intres[2540]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 20:40:48 cu-cs-vm ntpd_intres[2540]: host name not found: ntp.ubuntu.com
+Jan 22 20:41:19 cu-cs-vm uptimed: moving up to position 5: 0 days, 00:40:09
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323136] BUG: unable to handle kernel NULL pointer dereference at           (null)
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323146] IP: [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323160] PGD 264c7067 PUD 7b373067 PMD 0 
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323168] Oops: 0002 [#3] SMP 
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323174] Modules linked in: vboxsf(OX) snd_intel8x0 snd_ac97_codec ac97_bus snd_pcm snd_page_alloc snd_seq_midi snd_seq_midi_event snd_rawmidi snd_seq bnep rfcomm snd_timer snd_seq_device bluetooth joydev snd serio_raw vboxvideo(OX) vboxguest(OX) lpc_ich soundcore i2c_piix4 drm parport_pc ppdev lp parport mac_hid btrfs libcrc32c xor raid6_pq hid_generic usbhid hid psmouse ahci e1000 libahci
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323207] CPU: 0 PID: 2959 Comm: a.out Tainted: G      D    OX 3.13.11-ckt12Superyui #3
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323213] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323219] task: ffff8800794e97f0 ti: ffff88001c770000 task.ti: ffff88001c770000
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323224] RIP: 0010:[<ffffffff81052f5e>]  [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323232] RSP: 0018:ffff88001c771f70  EFLAGS: 00010283
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323237] RAX: 000000000000001e RBX: 0000000000000000 RCX: 00007f34efbe8e80
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323241] RDX: 0000000000000000 RSI: 0000000000000014 RDI: 000000000000000a
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323246] RBP: ffff88001c771f78 R08: 00007f34efbfe560 R09: 00007fffb482c200
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323251] R10: 00007f34efbe8e80 R11: 0000000000000202 R12: 0000000000400490
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323256] R13: 00007fffb482c200 R14: 0000000000000000 R15: 0000000000000000
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323261] FS:  00007f34efdef740(0000) GS:ffff88007fc00000(0000) knlGS:0000000000000000
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323267] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323271] CR2: 0000000000000000 CR3: 000000002642d000 CR4: 00000000000006f0
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323280] Stack:
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323284]  0000000000400490 00007fffb482c120 ffffffff8170cf2d 0000000000000202
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323291]  00007f34efbe8e80 00007fffb482c200 00007f34efbfe560 000000000000013f
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323297]  0000000000000000 0000000000000000 0000000000000014 000000000000000a
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323303] Call Trace:
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323318]  [<ffffffff8170cf2d>] system_call_fastpath+0x1a/0x1f
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323322] Code: 00 00 55 48 c7 c7 63 2a a3 81 31 c0 48 89 e5 e8 fb 4f 6a 00 31 c0 5d c3 0f 1f 44 00 00 0f 1f 44 00 00 55 8d 04 37 48 89 e5 41 54 <89> 02 31 c0 49 89 d4 53 89 f3 89 fe 48 c7 c7 72 2a a3 81 e8 cc 
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323356] RIP  [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323363]  RSP <ffff88001c771f70>
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323367] CR2: 0000000000000000
+Jan 22 20:50:15 cu-cs-vm kernel: [ 2944.323373] ---[ end trace 7e71afc46ecf4abb ]---
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423674] Number one: 10 
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423683] Number two: 20 
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423689] Sum: 30 
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423710] BUG: unable to handle kernel paging request at 00007f89dcb863e9
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423718] IP: [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423732] PGD 26535067 PUD 265b9067 PMD 6383a067 PTE 1e4e025
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423741] Oops: 0003 [#4] SMP 
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423749] Modules linked in: vboxsf(OX) snd_intel8x0 snd_ac97_codec ac97_bus snd_pcm snd_page_alloc snd_seq_midi snd_seq_midi_event snd_rawmidi snd_seq bnep rfcomm snd_timer snd_seq_device bluetooth joydev snd serio_raw vboxvideo(OX) vboxguest(OX) lpc_ich soundcore i2c_piix4 drm parport_pc ppdev lp parport mac_hid btrfs libcrc32c xor raid6_pq hid_generic usbhid hid psmouse ahci e1000 libahci
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423787] CPU: 0 PID: 2993 Comm: a.out Tainted: G      D    OX 3.13.11-ckt12Superyui #3
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423793] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423799] task: ffff880037160000 ti: ffff88001c7ec000 task.ti: ffff88001c7ec000
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423805] RIP: 0010:[<ffffffff81052f5e>]  [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423815] RSP: 0018:ffff88001c7edf70  EFLAGS: 00010283
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423821] RAX: 00000000aa1edf10 RBX: 0000000000000000 RCX: 00007f89dce67560
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423827] RDX: 00007f89dcb863e9 RSI: 00007fffaa1edefc RDI: 0000000000000014
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423832] RBP: ffff88001c7edf78 R08: 00007fffaa1edfe0 R09: 00007fffaa1edfe0
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423838] R10: 00007f89dce67560 R11: 0000000000000217 R12: 0000000000400490
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423844] R13: 00007fffaa1edfe0 R14: 0000000000000000 R15: 0000000000000000
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423850] FS:  00007f89dd058740(0000) GS:ffff88007fc00000(0000) knlGS:0000000000000000
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423856] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423862] CR2: 00007f89dcb863e9 CR3: 000000007b373000 CR4: 00000000000006f0
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423872] Stack:
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423878]  0000000000400490 00007fffaa1edf00 ffffffff8170cf2d 0000000000000217
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423886]  00007f89dce67560 00007fffaa1edfe0 00007fffaa1edfe0 000000000000013f
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423893]  00007fffaa1edefc 00007f89dcb863e9 00007fffaa1edefc 0000000000000014
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423900] Call Trace:
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423916]  [<ffffffff8170cf2d>] system_call_fastpath+0x1a/0x1f
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423921] Code: 00 00 55 48 c7 c7 63 2a a3 81 31 c0 48 89 e5 e8 fb 4f 6a 00 31 c0 5d c3 0f 1f 44 00 00 0f 1f 44 00 00 55 8d 04 37 48 89 e5 41 54 <89> 02 31 c0 49 89 d4 53 89 f3 89 fe 48 c7 c7 72 2a a3 81 e8 cc 
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423961] RIP  [<ffffffff81052f5e>] sys_simple_add+0xe/0x50
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423970]  RSP <ffff88001c7edf70>
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423975] CR2: 00007f89dcb863e9
+Jan 22 20:56:49 cu-cs-vm kernel: [ 3338.423982] ---[ end trace 7e71afc46ecf4abc ]---
+Jan 22 20:56:51 cu-cs-vm ntpd_intres[2540]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 20:56:51 cu-cs-vm ntpd_intres[2540]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 20:56:51 cu-cs-vm ntpd_intres[2540]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 20:56:51 cu-cs-vm ntpd_intres[2540]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 20:56:51 cu-cs-vm ntpd_intres[2540]: host name not found: ntp.ubuntu.com
+Jan 22 20:57:22 cu-cs-vm kernel: [ 3372.182414] Number one: 10 
+Jan 22 20:57:22 cu-cs-vm kernel: [ 3372.182422] Number two: 20 
+Jan 22 20:57:22 cu-cs-vm kernel: [ 3372.182426] Sum: 30 
+Jan 22 20:59:39 cu-cs-vm kernel: [ 3509.203225] e1000: eth0 NIC Link is Down
+Jan 22 20:59:39 cu-cs-vm NetworkManager[654]: <info> (eth0): carrier now OFF (device state 100, deferring action for 4 seconds)
+Jan 22 20:59:44 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: activated -> unavailable (reason 'carrier-changed') [100 20 40]
+Jan 22 20:59:44 cu-cs-vm NetworkManager[654]: <info> (eth0): deactivating device (reason 'carrier-changed') [40]
+Jan 22 20:59:44 cu-cs-vm NetworkManager[654]: <info> (eth0): canceled DHCP transaction, DHCP client pid 2435
+Jan 22 20:59:44 cu-cs-vm kernel: [ 3514.211288] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Jan 22 20:59:44 cu-cs-vm avahi-daemon[649]: Withdrawing address record for fe80::a00:27ff:fe35:fd62 on eth0.
+Jan 22 20:59:44 cu-cs-vm avahi-daemon[649]: Leaving mDNS multicast group on interface eth0.IPv6 with address fe80::a00:27ff:fe35:fd62.
+Jan 22 20:59:44 cu-cs-vm avahi-daemon[649]: Interface eth0.IPv6 no longer relevant for mDNS.
+Jan 22 20:59:44 cu-cs-vm avahi-daemon[649]: Withdrawing address record for 10.0.2.15 on eth0.
+Jan 22 20:59:44 cu-cs-vm avahi-daemon[649]: Leaving mDNS multicast group on interface eth0.IPv4 with address 10.0.2.15.
+Jan 22 20:59:44 cu-cs-vm avahi-daemon[649]: Interface eth0.IPv4 no longer relevant for mDNS.
+Jan 22 20:59:44 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now DISCONNECTED
+Jan 22 20:59:44 cu-cs-vm dbus[490]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Jan 22 20:59:44 cu-cs-vm dbus[490]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jan 22 20:59:45 cu-cs-vm kernel: [ 3515.245045] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Jan 22 20:59:45 cu-cs-vm kernel: [ 3515.245577] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> (eth0): carrier now ON (device state 20)
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Auto-activating connection 'Wired connection 1'.
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now CONNECTING
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> dhclient started with pid 3025
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Beginning IP6 addrconf.
+Jan 22 20:59:45 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Jan 22 20:59:45 cu-cs-vm dhclient: Internet Systems Consortium DHCP Client 4.2.4
+Jan 22 20:59:45 cu-cs-vm dhclient: Copyright 2004-2012 Internet Systems Consortium.
+Jan 22 20:59:45 cu-cs-vm dhclient: All rights reserved.
+Jan 22 20:59:45 cu-cs-vm dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Jan 22 20:59:45 cu-cs-vm dhclient: 
+Jan 22 20:59:46 cu-cs-vm NetworkManager[654]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Jan 22 20:59:46 cu-cs-vm dhclient: Listening on LPF/eth0/08:00:27:35:fd:62
+Jan 22 20:59:46 cu-cs-vm dhclient: Sending on   LPF/eth0/08:00:27:35:fd:62
+Jan 22 20:59:46 cu-cs-vm dhclient: Sending on   Socket/fallback
+Jan 22 20:59:46 cu-cs-vm dhclient: DHCPREQUEST of 10.0.2.15 on eth0 to 255.255.255.255 port 67 (xid=0x37c8d928)
+Jan 22 20:59:46 cu-cs-vm dhclient: DHCPACK of 10.0.2.15 from 10.0.2.2
+Jan 22 20:59:46 cu-cs-vm dhclient: bound to 10.0.2.15 -- renewal in 35508 seconds.
+Jan 22 20:59:46 cu-cs-vm NetworkManager[654]: <info> (eth0): DHCPv4 state changed preinit -> reboot
+Jan 22 20:59:46 cu-cs-vm NetworkManager[654]: <info>   address 10.0.2.15
+Jan 22 20:59:46 cu-cs-vm NetworkManager[654]: <info>   prefix 24 (255.255.255.0)
+Jan 22 20:59:46 cu-cs-vm NetworkManager[654]: <info>   gateway 10.0.2.2
+Jan 22 20:59:46 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Jan 22 20:59:46 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Jan 22 20:59:46 cu-cs-vm avahi-daemon[649]: Joining mDNS multicast group on interface eth0.IPv4 with address 10.0.2.15.
+Jan 22 20:59:46 cu-cs-vm avahi-daemon[649]: New relevant interface eth0.IPv4 for mDNS.
+Jan 22 20:59:46 cu-cs-vm avahi-daemon[649]: Registering new address record for 10.0.2.15 on eth0.IPv4.
+Jan 22 20:59:47 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: ip-config -> secondaries (reason 'none') [70 90 0]
+Jan 22 20:59:47 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Jan 22 20:59:47 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: secondaries -> activated (reason 'none') [90 100 0]
+Jan 22 20:59:47 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now CONNECTED_GLOBAL
+Jan 22 20:59:47 cu-cs-vm NetworkManager[654]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Jan 22 20:59:47 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) successful, device activated.
+Jan 22 20:59:47 cu-cs-vm ntpd[2538]: ntpd exiting on signal 15
+Jan 22 20:59:47 cu-cs-vm ntpdate[3099]: Can't find host 0.ubuntu.pool.ntp.org: Name or service not known (-2)
+Jan 22 20:59:47 cu-cs-vm ntpdate[3099]: Can't find host 1.ubuntu.pool.ntp.org: Name or service not known (-2)
+Jan 22 20:59:47 cu-cs-vm ntpdate[3099]: Can't find host 2.ubuntu.pool.ntp.org: Name or service not known (-2)
+Jan 22 20:59:47 cu-cs-vm ntpdate[3099]: Can't find host 3.ubuntu.pool.ntp.org: Name or service not known (-2)
+Jan 22 20:59:47 cu-cs-vm ntpdate[3099]: Can't find host ntp.ubuntu.com: Name or service not known (-2)
+Jan 22 20:59:47 cu-cs-vm ntpdate[3099]: no servers can be used, exiting
+Jan 22 20:59:47 cu-cs-vm ntpd[3130]: ntpd 4.2.6p5@1.2349-o Sat Dec 20 11:47:14 UTC 2014 (1)
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: proto: precision = 2.091 usec
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: ntp_io: estimated max descriptors: 1024, initial socket boundary: 16
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Listen and drop on 1 v6wildcard :: UDP 123
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Listen normally on 3 eth0 10.0.2.15 UDP 123
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Listen normally on 4 lo ::1 UDP 123
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: peers refreshed
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Listening on routing socket on fd #21 for interface updates
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Deferring DNS for 0.ubuntu.pool.ntp.org 1
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Deferring DNS for 1.ubuntu.pool.ntp.org 1
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Deferring DNS for 2.ubuntu.pool.ntp.org 1
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Deferring DNS for 3.ubuntu.pool.ntp.org 1
+Jan 22 20:59:47 cu-cs-vm ntpd[3131]: Deferring DNS for ntp.ubuntu.com 1
+Jan 22 20:59:47 cu-cs-vm ntpd[3133]: signal_no_reset: signal 17 had flags 4000000
+Jan 22 20:59:47 cu-cs-vm avahi-daemon[649]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::a00:27ff:fe35:fd62.
+Jan 22 20:59:47 cu-cs-vm avahi-daemon[649]: New relevant interface eth0.IPv6 for mDNS.
+Jan 22 20:59:47 cu-cs-vm avahi-daemon[649]: Registering new address record for fe80::a00:27ff:fe35:fd62 on eth0.*.
+Jan 22 20:59:49 cu-cs-vm ntpd[3131]: Listen normally on 5 eth0 fe80::a00:27ff:fe35:fd62 UDP 123
+Jan 22 20:59:49 cu-cs-vm ntpd[3131]: peers refreshed
+Jan 22 20:59:49 cu-cs-vm ntpd[3131]: new interface(s) found: waking up resolver
+Jan 22 20:59:49 cu-cs-vm ntpd_intres[3133]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 20:59:49 cu-cs-vm ntpd_intres[3133]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 20:59:49 cu-cs-vm ntpd_intres[3133]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 20:59:49 cu-cs-vm ntpd_intres[3133]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 20:59:49 cu-cs-vm ntpd_intres[3133]: host name not found: ntp.ubuntu.com
+Jan 22 21:24:55 cu-cs-vm ntpd_intres[3133]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 21:24:55 cu-cs-vm ntpd_intres[3133]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 21:24:55 cu-cs-vm ntpd_intres[3133]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 21:24:55 cu-cs-vm ntpd_intres[3133]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 21:24:55 cu-cs-vm ntpd_intres[3133]: host name not found: ntp.ubuntu.com
+Jan 22 21:24:55 cu-cs-vm ntpd_intres[2540]: parent died before we finished, exiting
+Jan 22 21:25:11 cu-cs-vm NetworkManager[654]: <info> (eth0): IP6 addrconf timed out or failed.
+Jan 22 21:25:11 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Jan 22 21:25:11 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Jan 22 21:25:11 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Jan 22 21:26:57 cu-cs-vm ntpd_intres[3133]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 21:26:57 cu-cs-vm ntpd_intres[3133]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 21:26:57 cu-cs-vm ntpd_intres[3133]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 21:26:57 cu-cs-vm ntpd_intres[3133]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 21:26:57 cu-cs-vm ntpd_intres[3133]: host name not found: ntp.ubuntu.com
+Jan 22 21:28:20 cu-cs-vm NetworkManager[654]: <info> (eth0): carrier now OFF (device state 100, deferring action for 4 seconds)
+Jan 22 21:28:20 cu-cs-vm kernel: [ 3725.740394] e1000: eth0 NIC Link is Down
+Jan 22 21:28:24 cu-cs-vm NetworkManager[654]: <info> (eth0): carrier now ON (device state 100)
+Jan 22 21:28:24 cu-cs-vm kernel: [ 3729.749611] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Jan 22 21:30:25 cu-cs-vm NetworkManager[654]: <info> (eth0): carrier now OFF (device state 100, deferring action for 4 seconds)
+Jan 22 21:30:25 cu-cs-vm kernel: [ 3850.021269] e1000: eth0 NIC Link is Down
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: activated -> unavailable (reason 'carrier-changed') [100 20 40]
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): deactivating device (reason 'carrier-changed') [40]
+Jan 22 21:30:29 cu-cs-vm kernel: [ 3854.028801] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): canceled DHCP transaction, DHCP client pid 3025
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: Withdrawing address record for fe80::a00:27ff:fe35:fd62 on eth0.
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: Leaving mDNS multicast group on interface eth0.IPv6 with address fe80::a00:27ff:fe35:fd62.
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: Interface eth0.IPv6 no longer relevant for mDNS.
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: Withdrawing address record for 10.0.2.15 on eth0.
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: Leaving mDNS multicast group on interface eth0.IPv4 with address 10.0.2.15.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now DISCONNECTED
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): carrier now ON (device state 20)
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: Interface eth0.IPv4 no longer relevant for mDNS.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Auto-activating connection 'Wired connection 1'.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now CONNECTING
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Jan 22 21:30:29 cu-cs-vm dbus[490]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> dhclient started with pid 3171
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Beginning IP6 addrconf.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Jan 22 21:30:29 cu-cs-vm dhclient: Internet Systems Consortium DHCP Client 4.2.4
+Jan 22 21:30:29 cu-cs-vm dhclient: Copyright 2004-2012 Internet Systems Consortium.
+Jan 22 21:30:29 cu-cs-vm dhclient: All rights reserved.
+Jan 22 21:30:29 cu-cs-vm dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Jan 22 21:30:29 cu-cs-vm dhclient: 
+Jan 22 21:30:29 cu-cs-vm dbus[490]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Jan 22 21:30:29 cu-cs-vm dhclient: Listening on LPF/eth0/08:00:27:35:fd:62
+Jan 22 21:30:29 cu-cs-vm dhclient: Sending on   LPF/eth0/08:00:27:35:fd:62
+Jan 22 21:30:29 cu-cs-vm dhclient: Sending on   Socket/fallback
+Jan 22 21:30:29 cu-cs-vm dhclient: DHCPREQUEST of 10.0.2.15 on eth0 to 255.255.255.255 port 67 (xid=0x5fe3aa39)
+Jan 22 21:30:29 cu-cs-vm dhclient: DHCPACK of 10.0.2.15 from 10.0.2.2
+Jan 22 21:30:29 cu-cs-vm dhclient: bound to 10.0.2.15 -- renewal in 35557 seconds.
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> (eth0): DHCPv4 state changed preinit -> reboot
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info>   address 10.0.2.15
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info>   prefix 24 (255.255.255.0)
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info>   gateway 10.0.2.2
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Jan 22 21:30:29 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: Joining mDNS multicast group on interface eth0.IPv4 with address 10.0.2.15.
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: New relevant interface eth0.IPv4 for mDNS.
+Jan 22 21:30:29 cu-cs-vm avahi-daemon[649]: Registering new address record for 10.0.2.15 on eth0.IPv4.
+Jan 22 21:30:30 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: ip-config -> secondaries (reason 'none') [70 90 0]
+Jan 22 21:30:30 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Jan 22 21:30:30 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: secondaries -> activated (reason 'none') [90 100 0]
+Jan 22 21:30:30 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now CONNECTED_GLOBAL
+Jan 22 21:30:30 cu-cs-vm NetworkManager[654]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Jan 22 21:30:30 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) successful, device activated.
+Jan 22 21:30:30 cu-cs-vm ntpd[3131]: ntpd exiting on signal 15
+Jan 22 21:30:30 cu-cs-vm ntpdate[3243]: Can't find host 0.ubuntu.pool.ntp.org: Name or service not known (-2)
+Jan 22 21:30:30 cu-cs-vm ntpdate[3243]: Can't find host 1.ubuntu.pool.ntp.org: Name or service not known (-2)
+Jan 22 21:30:30 cu-cs-vm ntpdate[3243]: Can't find host 2.ubuntu.pool.ntp.org: Name or service not known (-2)
+Jan 22 21:30:30 cu-cs-vm ntpdate[3243]: Can't find host 3.ubuntu.pool.ntp.org: Name or service not known (-2)
+Jan 22 21:30:30 cu-cs-vm ntpdate[3243]: Can't find host ntp.ubuntu.com: Name or service not known (-2)
+Jan 22 21:30:30 cu-cs-vm ntpdate[3243]: no servers can be used, exiting
+Jan 22 21:30:30 cu-cs-vm ntpd[3280]: ntpd 4.2.6p5@1.2349-o Sat Dec 20 11:47:14 UTC 2014 (1)
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: proto: precision = 2.529 usec
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: ntp_io: estimated max descriptors: 1024, initial socket boundary: 16
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Listen and drop on 1 v6wildcard :: UDP 123
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Listen normally on 3 eth0 10.0.2.15 UDP 123
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Listen normally on 4 lo ::1 UDP 123
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: peers refreshed
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Listening on routing socket on fd #21 for interface updates
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Deferring DNS for 0.ubuntu.pool.ntp.org 1
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Deferring DNS for 1.ubuntu.pool.ntp.org 1
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Deferring DNS for 2.ubuntu.pool.ntp.org 1
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Deferring DNS for 3.ubuntu.pool.ntp.org 1
+Jan 22 21:30:30 cu-cs-vm ntpd[3281]: Deferring DNS for ntp.ubuntu.com 1
+Jan 22 21:30:30 cu-cs-vm ntpd[3283]: signal_no_reset: signal 17 had flags 4000000
+Jan 22 21:30:31 cu-cs-vm avahi-daemon[649]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::a00:27ff:fe35:fd62.
+Jan 22 21:30:31 cu-cs-vm avahi-daemon[649]: New relevant interface eth0.IPv6 for mDNS.
+Jan 22 21:30:31 cu-cs-vm avahi-daemon[649]: Registering new address record for fe80::a00:27ff:fe35:fd62 on eth0.*.
+Jan 22 21:30:32 cu-cs-vm ntpd[3281]: Listen normally on 5 eth0 fe80::a00:27ff:fe35:fd62 UDP 123
+Jan 22 21:30:32 cu-cs-vm ntpd[3281]: peers refreshed
+Jan 22 21:30:32 cu-cs-vm ntpd[3281]: new interface(s) found: waking up resolver
+Jan 22 21:30:32 cu-cs-vm ntpd_intres[3283]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 21:30:32 cu-cs-vm ntpd_intres[3283]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 21:30:32 cu-cs-vm ntpd_intres[3283]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 21:30:32 cu-cs-vm ntpd_intres[3283]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 21:30:32 cu-cs-vm ntpd_intres[3283]: host name not found: ntp.ubuntu.com
+Jan 22 21:30:34 cu-cs-vm ntpd_intres[3283]: host name not found: 0.ubuntu.pool.ntp.org
+Jan 22 21:30:34 cu-cs-vm ntpd_intres[3283]: host name not found: 1.ubuntu.pool.ntp.org
+Jan 22 21:30:34 cu-cs-vm ntpd_intres[3283]: host name not found: 2.ubuntu.pool.ntp.org
+Jan 22 21:30:34 cu-cs-vm ntpd_intres[3283]: host name not found: 3.ubuntu.pool.ntp.org
+Jan 22 21:30:34 cu-cs-vm ntpd_intres[3283]: host name not found: ntp.ubuntu.com
+Jan 22 21:30:37 cu-cs-vm NetworkManager[654]: <info> (eth0): carrier now OFF (device state 100, deferring action for 4 seconds)
+Jan 22 21:30:37 cu-cs-vm kernel: [ 3862.044382] e1000: eth0 NIC Link is Down
+Jan 22 21:30:37 cu-cs-vm kernel: [ 3862.044628] e1000 0000:00:03.0 eth0: Reset adapter
+Jan 22 21:30:41 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: activated -> unavailable (reason 'carrier-changed') [100 20 40]
+Jan 22 21:30:41 cu-cs-vm NetworkManager[654]: <info> (eth0): deactivating device (reason 'carrier-changed') [40]
+Jan 22 21:30:41 cu-cs-vm NetworkManager[654]: <info> (eth0): canceled DHCP transaction, DHCP client pid 3171
+Jan 22 21:30:41 cu-cs-vm avahi-daemon[649]: Withdrawing address record for fe80::a00:27ff:fe35:fd62 on eth0.
+Jan 22 21:30:41 cu-cs-vm avahi-daemon[649]: Leaving mDNS multicast group on interface eth0.IPv6 with address fe80::a00:27ff:fe35:fd62.
+Jan 22 21:30:41 cu-cs-vm avahi-daemon[649]: Interface eth0.IPv6 no longer relevant for mDNS.
+Jan 22 21:30:41 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now DISCONNECTED
+Jan 22 21:30:41 cu-cs-vm kernel: [ 3866.208539] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Jan 22 21:30:41 cu-cs-vm avahi-daemon[649]: Withdrawing address record for 10.0.2.15 on eth0.
+Jan 22 21:30:41 cu-cs-vm avahi-daemon[649]: Leaving mDNS multicast group on interface eth0.IPv4 with address 10.0.2.15.
+Jan 22 21:30:41 cu-cs-vm avahi-daemon[649]: Interface eth0.IPv4 no longer relevant for mDNS.
+Jan 22 21:30:41 cu-cs-vm dbus[490]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Jan 22 21:30:41 cu-cs-vm dbus[490]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jan 22 21:30:42 cu-cs-vm ntpd[3281]: Deleting interface #5 eth0, fe80::a00:27ff:fe35:fd62#123, interface stats: received=0, sent=0, dropped=0, active_time=10 secs
+Jan 22 21:30:42 cu-cs-vm ntpd[3281]: Deleting interface #3 eth0, 10.0.2.15#123, interface stats: received=0, sent=0, dropped=0, active_time=12 secs
+Jan 22 21:30:42 cu-cs-vm ntpd[3281]: peers refreshed
+Jan 22 21:30:43 cu-cs-vm kernel: [ 3868.113621] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Jan 22 21:30:43 cu-cs-vm kernel: [ 3868.118801] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> (eth0): carrier now ON (device state 20)
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Auto-activating connection 'Wired connection 1'.
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now CONNECTING
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> dhclient started with pid 3294
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Beginning IP6 addrconf.
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Jan 22 21:30:43 cu-cs-vm dhclient: Internet Systems Consortium DHCP Client 4.2.4
+Jan 22 21:30:43 cu-cs-vm dhclient: Copyright 2004-2012 Internet Systems Consortium.
+Jan 22 21:30:43 cu-cs-vm dhclient: All rights reserved.
+Jan 22 21:30:43 cu-cs-vm dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Jan 22 21:30:43 cu-cs-vm dhclient: 
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Jan 22 21:30:43 cu-cs-vm dhclient: Listening on LPF/eth0/08:00:27:35:fd:62
+Jan 22 21:30:43 cu-cs-vm dhclient: Sending on   LPF/eth0/08:00:27:35:fd:62
+Jan 22 21:30:43 cu-cs-vm dhclient: Sending on   Socket/fallback
+Jan 22 21:30:43 cu-cs-vm dhclient: DHCPREQUEST of 10.0.2.15 on eth0 to 255.255.255.255 port 67 (xid=0x2cc0fa50)
+Jan 22 21:30:43 cu-cs-vm dhclient: DHCPACK of 10.0.2.15 from 10.0.2.2
+Jan 22 21:30:43 cu-cs-vm dhclient: bound to 10.0.2.15 -- renewal in 33869 seconds.
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> (eth0): DHCPv4 state changed preinit -> reboot
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info>   address 10.0.2.15
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info>   prefix 24 (255.255.255.0)
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info>   gateway 10.0.2.2
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info>   nameserver '192.168.2.1'
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info>   domain name 'Home'
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Jan 22 21:30:43 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Jan 22 21:30:43 cu-cs-vm avahi-daemon[649]: Joining mDNS multicast group on interface eth0.IPv4 with address 10.0.2.15.
+Jan 22 21:30:43 cu-cs-vm avahi-daemon[649]: New relevant interface eth0.IPv4 for mDNS.
+Jan 22 21:30:43 cu-cs-vm avahi-daemon[649]: Registering new address record for 10.0.2.15 on eth0.IPv4.
+Jan 22 21:30:44 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: ip-config -> secondaries (reason 'none') [70 90 0]
+Jan 22 21:30:44 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Jan 22 21:30:44 cu-cs-vm NetworkManager[654]: <info> (eth0): device state change: secondaries -> activated (reason 'none') [90 100 0]
+Jan 22 21:30:44 cu-cs-vm NetworkManager[654]: <info> NetworkManager state is now CONNECTED_GLOBAL
+Jan 22 21:30:44 cu-cs-vm NetworkManager[654]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Jan 22 21:30:44 cu-cs-vm NetworkManager[654]: <info> Writing DNS information to /sbin/resolvconf
+Jan 22 21:30:44 cu-cs-vm dnsmasq[999]: setting upstream servers from DBus
+Jan 22 21:30:44 cu-cs-vm dnsmasq[999]: using nameserver 192.168.2.1#53
+Jan 22 21:30:44 cu-cs-vm avahi-daemon[649]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::a00:27ff:fe35:fd62.
+Jan 22 21:30:44 cu-cs-vm avahi-daemon[649]: New relevant interface eth0.IPv6 for mDNS.
+Jan 22 21:30:44 cu-cs-vm avahi-daemon[649]: Registering new address record for fe80::a00:27ff:fe35:fd62 on eth0.*.
+Jan 22 21:30:44 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) successful, device activated.
+Jan 22 21:30:44 cu-cs-vm whoopsie[909]: message repeated 25 times: [ offline]
+Jan 22 21:30:44 cu-cs-vm whoopsie[909]: online
+Jan 22 21:30:44 cu-cs-vm ntpd[3281]: ntpd exiting on signal 15
+Jan 22 21:30:57 cu-cs-vm ntpd_intres[3133]: parent died before we finished, exiting
+Jan 22 21:31:17 cu-cs-vm ntpdate[3407]: step time server 173.255.196.241 offset 18.924730 sec
+Jan 22 21:31:17 cu-cs-vm ntpd[3438]: ntpd 4.2.6p5@1.2349-o Sat Dec 20 11:47:14 UTC 2014 (1)
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: proto: precision = 2.178 usec
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: ntp_io: estimated max descriptors: 1024, initial socket boundary: 16
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: Listen and drop on 1 v6wildcard :: UDP 123
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: Listen normally on 3 eth0 10.0.2.15 UDP 123
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: Listen normally on 4 lo ::1 UDP 123
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: Listen normally on 5 eth0 fe80::a00:27ff:fe35:fd62 UDP 123
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: peers refreshed
+Jan 22 21:31:17 cu-cs-vm ntpd[3439]: Listening on routing socket on fd #22 for interface updates
+Jan 22 21:31:21 cu-cs-vm NetworkManager[654]: <info> (eth0): IP6 addrconf timed out or failed.
+Jan 22 21:31:21 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Jan 22 21:31:21 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Jan 22 21:31:21 cu-cs-vm NetworkManager[654]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Jan 22 21:31:23 cu-cs-vm ntpd_intres[3283]: parent died before we finished, exiting
+Jan 22 21:36:51 cu-cs-vm kernel: [ 4218.003818] Number one: 10 
+Jan 22 21:36:51 cu-cs-vm kernel: [ 4218.003824] Number two: 20 
+Jan 22 21:36:51 cu-cs-vm kernel: [ 4218.003827] Sum: 30 
+Jan 22 21:37:04 cu-cs-vm kernel: [ 4230.713096] Number one: 10 
+Jan 22 21:37:04 cu-cs-vm kernel: [ 4230.713106] Number two: 20 
+Jan 22 21:37:04 cu-cs-vm kernel: [ 4230.713111] Sum: 30 
+Jan 22 21:37:06 cu-cs-vm kernel: [ 4232.552269] Number one: 10 
+Jan 22 21:37:06 cu-cs-vm kernel: [ 4232.552279] Number two: 20 
+Jan 22 21:37:06 cu-cs-vm kernel: [ 4232.552285] Sum: 30 
+Jan 22 21:37:32 cu-cs-vm kernel: [ 4259.082804] hello world
