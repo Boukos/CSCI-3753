@@ -78,8 +78,13 @@ System Calls :neckbeard::neckbeard:
             - example, github provide an API that allows us to type "git push" 
             - Behind the scenes, the function that make up an API typically invoke the actual system calls
 
-
+    
 ![**System Call Flow](http://www.cs.iit.edu/~cs561/cs450/syscalls/2.jpg)
+
+   * **System Call Interface**
+        - link to system calls made available by the operating system. (a link to the system call table ex: #319)
+        - has some command involve to call the trap table (something like syscall(319))
+
 
 
 
