@@ -7,7 +7,6 @@ Lecture 2: Kernel Mode, Traps, System Calls, Multitasking
 * Read chapters 1-2 & 13
 :alien:
 
-**************************************
 
 Recap
 ------
@@ -21,7 +20,7 @@ Recap
 
 * Mach OS is a microkernel - kernel only contains scheduler, memory manager, and messaging
 
-******************************************************************************************************************
+
 
 Lecture
 --------
@@ -61,7 +60,7 @@ It provides certain services to programs and to the users of those programs.
                 - any virtual address given to memory manageer is translated into a non-conflicting physical adress
                 - Access to the wrong memory causes a page fault
 
-******************************************************************************************************************
+
 
 System Calls :neckbeard::neckbeard:
 --------------------------------
