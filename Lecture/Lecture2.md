@@ -33,6 +33,8 @@ Operating-System Services
 * An operating system **provides an environment** for the execution of programs.
 It provides certain services to programs and to the users of those programs.
 
+******************************************************************************
+
 * **Service provide to user**
 
 |Service|Functions|
@@ -68,6 +70,8 @@ System Calls :neckbeard::neckbeard:
 --------------------------------
    * a system call is how a program **requests a service** from an operating system's kernel
         - to create a file, the program needs to request a service from the operating system
+
+******************************************************************************
 
    * **API vs. System Call**
         - Application Programming interface specifies a set of functions that available to an application programmer
