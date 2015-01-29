@@ -79,6 +79,7 @@ System Calls :neckbeard::neckbeard:
             - Behind the scenes, the function that make up an API typically invoke the actual system calls
 
 
+![**System Call Flow](http://www.cs.iit.edu/~cs561/cs450/syscalls/2.jpg)
 
 
 
