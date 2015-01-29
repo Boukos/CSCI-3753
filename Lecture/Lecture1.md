@@ -74,7 +74,7 @@ I/O Structure
 Kernel
 -------
 *  operating system is the one program running at all times on the computer—usually called the kernel. 
-	-:bangbang: **A kernel is the part of the operating system** that mediates access to system resources. It's responsible for enabling multiple applications to effectively share the hardware by controlling access to CPU, memory, disk I/O, and networking
+	- :bangbang: **A kernel is the part of the operating system** that mediates access to system resources. It's responsible for enabling multiple applications to effectively share the hardware by controlling access to CPU, memory, disk I/O, and networking
 
 
 O.S Functionality (OS "Kernel")
