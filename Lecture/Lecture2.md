@@ -7,6 +7,7 @@ Lecture 2: Kernel Mode, Traps, System Calls, Multitasking
 * Read chapters 1-2 & 13
 :alien:
 
+/play unix
 
 Recap
 ------
