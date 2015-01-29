@@ -1,3 +1,4 @@
+
 Lecture 2: Kernel Mode, Traps, System Calls, Multitasking
 ----------------------------------------------------------
 
@@ -7,7 +8,6 @@ Lecture 2: Kernel Mode, Traps, System Calls, Multitasking
 * Read chapters 1-2 & 13
 :alien:
 
-/play unix
 
 Recap
 ------
@@ -21,6 +21,7 @@ Recap
 
 * Mach OS is a microkernel - kernel only contains scheduler, memory manager, and messaging
 
+:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:
 
 
 Lecture
@@ -66,8 +67,12 @@ It provides certain services to programs and to the users of those programs.
 System Calls :neckbeard::neckbeard:
 --------------------------------
    * a system call is how a program **requests a service** from an operating system's kernel
-    - to create a file, the program needs to request a service from the operating system
+        - to create a file, the program needs to request a service from the operating system
 
+   * **API vs. System Call**
+        - Application Programming interface specifies a set of functions that available to an application programmer
+            - example, github provide an API that allows us to type "git push" 
+            - Behind the scenes, the function that make up an API typically invoke the actual system calls
 
 
 
