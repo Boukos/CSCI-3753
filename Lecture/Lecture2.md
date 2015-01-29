@@ -36,19 +36,19 @@ It provides certain services to programs and to the users of those programs.
 
 |Service|Functions|
 |-------|---------|
-|User Interface|:v:|
-|Program execution| load program into memory and run|
-|I/O operations|required for a running program|
-|File-system manipulation|to read and write files and directory|
-|Communication| A program triggers the other|
+| **User Interface** |:v:|
+| **Program execution** | load program into memory and run|
+|**I/O operations**|required for a running program|
+|**File-system manipulation**|to read and write files and directory|
+|**Communication**| A program triggers the other|
 
 * **Service for the sake of the computer**
 
 |Service|Functions|
 |-------|---------|
-|Resource allocation| allocate resources|
-|Accounting| so software can keep track of usage and charge us :no_mouth:|
-|Protection| stop one process from interfereing with other|
+|**Resource allocation**| allocate resources|
+|**Accounting**| so software can keep track of usage and charge us :no_mouth:|
+|**Protection**| stop one process from interfereing with other|
 
 
 
