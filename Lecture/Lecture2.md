@@ -53,24 +53,27 @@ It provides certain services to programs and to the users of those programs.
 
 
 * **Protection in Operating Systems**
-    - One of an Operating System's main goals is **Protection**
-      - Protect applications from each other
-      - Protect OS(kernel) from application
-    - 1. Preventing application from **writing into privileged memory**
+    * Preventing application from **writing into privileged memory**
         - Memory protection via VM: 
            - Recall that an executable only has virtual address.
            - These are translated into physical memory addresses at run time by a page table
            - OS controls the page table (prevent programs to write to others physic memory page)
                 - any virtual address given to memory manageer is translated into a non-conflicting physical adress
                 - Access to the wrong memory causes a page fault
-    - 2. Protecting the OS via a Mode Bit
-        - Processors include a hardware mode bit that identifies whether the system is in user mode or supervisor/kernel mode
-              - requires extra support from the cpu hardware for this OS feature
-        - Prevents applications from executing privileged instructions
-              - Can't reset time slice register, or change interrupt vector register, ...
-        - Embedded microcontrollers don't have mode bit
-        - Intel 80286 added mode bit in 1982
-      
+
+******************************************************************************************************************
+
+System Calls :neckbeard::neckbeard:
+--------------------------------
+   * a system call is how a program **requests a service** from an operating system's kernel
+    - to create a file, the program needs to request a service from the operating system
+
+
+
+
+
+
+
 
 * **Kernel Mode vs User Mode**
     - Supervisor 
