@@ -131,8 +131,7 @@ Types of Multitasking
     - Force programs to release CPU 
     - OS forces rapid switching between multiple executing programs by setting a hardware timer
     - The timer periodically interruptes CPU execution, invoking OS scheduler to schedule the next program
-    - Time Slices
-    - Each program is given a short interval on the CPU called a time slice
+    - Time Slices - Each program is given a short interval on the CPU called a time slice
 - **Benifits**
     - Efficient sharing of CPU
     - Fault isolation solved
