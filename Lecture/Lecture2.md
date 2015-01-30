@@ -81,85 +81,37 @@ System Calls :neckbeard::neckbeard:
     
 ![**System Call Flow](http://www.cs.iit.edu/~cs561/cs450/syscalls/2.jpg)
 
-   * **System Call Interface**
+* **System Call Interface**
         - link to system calls made available by the operating system. (a link to the system call table ex: #319)
         - has some command involve to call the trap table (something like syscall(319))
-
-
-
-
-
-
-* **Kernel Mode vs User Mode**
-    - Supervisor 
-        - Can execute all machine instruction, reference all memory and Kernel runs in this.
-    - User
-        - screwed.
-
-
-************************************
-
-|Rings of privilege|
-|----------------|
-|ring 0 : Kernel|
-|ring 1 : Device drivers|
-|ring 2 : Device drivers|
-|ring 3 : Applications|
-    
-* VM runs in ring 0, guest OS runs in ring 1 or 2, Apps run in ring 3.
-* OS like runs in ring 0, Apps run in ring 3, and rings 1-2 are unused.
-
-************************************
-
-
-* **Mode changes, How Apps and the OS commucated**
-<<<<<<< HEAD
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-=======
-* **Mode changes, How Apps and the OS commucated**
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-=======
->>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
-    - System call between user mode(mode bit = 1) and kernel mode (mode bit = 0)
-         - user process exe -> system call -> trap to the OS, interupt the exe of the software -> transfer control to the kernel , execute system call ->handle system call and reset the mode bit to 1 -> return to user from the system call
-    - the **trap** instrcution is used to switch from user to supervisor mode, thereby enter the OS
-        - trap sets the mode bit to 0
-        - mode bit reset to 1
-
-************************************
 
 * **Trap Table**
     - The process of indexing into the trap table to jump to the trap handler routine is also called dispatching
     - the trap table is also called a jump table or a branch table
     - "A trap is a software interrupt"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-** System Call Parameter Passing**
-  --------------------------------------
-=======
-* System Call Parameter Passing
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-=======
-* System Call Parameter Passing
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-=======
-************************************
-
 * **System Call Parameter Passing**
->>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
-    - Often, more information is required than simply identity of desired system call
-        - exact type and amount of information vary according to OS and call
     - Three general methods used to pass parameters to the OS
-        - Simplest: pass the parameters in registers
-        - **Pointer**: Parameters stored in a block, or table, in memory, and address of block passed as a parameter in register
-        - Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the Operating System.
-     * Stardard C Library Example
-        - C program invoking printf() library call, wich calls write() system call
+        - 1. pass the parameters in registers
+        - 2. **Pointer**: Parameters stored in a block, or table, in memory, and address of block passed as a parameter in register
+        - 3. Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the Operating System.
 
-************************************
+
+:exclamation:O.S vs. multiple applications?:exclamation:
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * **How does an OS support multiple applications?**
     - Batching of jobs
