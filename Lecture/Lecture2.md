@@ -125,16 +125,16 @@ System Calls :neckbeard::neckbeard:
 Types of Multitasking
 -------------------------
 - **Cooperative multitaksing**
-            - voluntarily yield CPU before they're done (1 program wait for another to finish first)
-            - :no_entry_sign: problem with program hogs the CPU, then we are screwed!
+    - voluntarily yield CPU before they're done (1 program wait for another to finish first)
+    - :no_entry_sign: problem with program hogs the CPU, then we are screwed!
 - **Preemptive multitaksing**
-            - Force programs to release CPU 
-            - OS forces rapid switching between multiple executing programs by setting a hardware timer
-            - The timer periodically interruptes CPU execution, invoking OS scheduler to schedule the next program
-            - Time Slices
-                - Each program is given a short interval on the CPU called a time slice
+    - Force programs to release CPU 
+    - OS forces rapid switching between multiple executing programs by setting a hardware timer
+    - The timer periodically interruptes CPU execution, invoking OS scheduler to schedule the next program
+    - Time Slices
+    - Each program is given a short interval on the CPU called a time slice
 - **Benifits**
-                - Efficient sharing of CPU
-                - Fault isolation solved
-                - Support for long-running jobs
-                - Support for interactive programs
+    - Efficient sharing of CPU
+    - Fault isolation solved
+    - Support for long-running jobs
+    - Support for interactive programs
