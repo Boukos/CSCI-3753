@@ -97,44 +97,19 @@ System Calls :neckbeard::neckbeard:
         - 3. Parameters placed, or **pushed**, onto the **stack** by the program and **popped** off the stack by the Operating System.
 
 
-:exclamation:O.S vs. multiple applications?:exclamation:
+:exclamation: Multitasking :exclamation:
 ------------------------------------
 
+* :no_entry_sign:**Sequential Execution**:no_entry_sign:
+    - :point_right: executing continuously until program is finished
+        - Poor utilization, maybe billions of wasted instruction cycles. If it is I/O bound, need to wait for input then resume work(other program has to wait, compares to now day, we can make use of those free memory)
 
+* **Multiprogramming** 
+    -  :point_right: Submit your program, called a job,into a job queue, when CPU is availble, OS execute your job.
+     - is not suitable with Interactive applications like the shell program(require waiting finish for programs)
 
-
-
-
-
-
-
-
-
-
-
-
-* **How does an OS support multiple applications?**
-    - Batching of jobs
-    - executing continuously until program is finished
-        - Poor utilization, maybe billions of wasted instruction cycles.(other program has to wait, compares to now day, we can make use of those free memory)
-    - Multiprogramming :) (or Multiprogrammed batch system)
-        - much efficient to share CPU
-        - Submit your program, called a job,into a job queue, when CPU is availble, OS exe your job.
-        - is not suitable with Interactive applications like the shell program(require waiting finish for programs)
-    - limitation of Multiprogramming
-         - Batch jobs are very non-interative
-<<<<<<< HEAD
-            - Don't support a shell application
-            - design jobs to yield much sooner than an I/O block, to give the impression of interactivity
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-************************************
 
 * **Multitasking**
-
->>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
     - CPU rapidly switches between multiple programs
         - Each program gets a small slice of the CPU, then yields the CPU to another program
         - This switching happens often enough that each program still gets a fair percentage of the CPU, and call still make significant progress
@@ -149,35 +124,19 @@ System Calls :neckbeard::neckbeard:
             - with each context switch, the CPU has to save the current state of application 1
             - and then load the state of the new application 2 when app 2 was last switched out
         - All of this takes time and no useful work can be done by program during a context switch
-<<<<<<< HEAD
-        
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-       
-       
-************************************ 
->>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
 
-* **Cooperative Multitasking**
-<<<<<<< HEAD
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-=======
-* **Cooperative Multitasking**
->>>>>>> parent of d6b5e3d... Kernel Mode, Traps, System Calls, Multitasking
-=======
->>>>>>> 9f5b70e432d2a9775bfdbbf4841b3f9d90ccf322
-    - How does an OS achieve Multitasking
-         - **Cooperative multitaksing**
+
+
+  - **Cooperative multitaksing**
             - voluntarily yield CPU before they're done (1 program wait for another to finish first)
             - problem with program hogs the CPU, the we are screwed!
-         - **Preemptive multitaksing**
+  - **Preemptive multitaksing**
             - Force programs to release CPU 
             - OS forces rapid switching between multiple executing programs by setting a hardware timer
             - The timer periodically interruptes CPU execution, invoking OS scheduler to schedule the next program
             - Time Slices
                 - Each program is given a short interval on the CPU called a time slice
-            - **Benifits**
+    - **Benifits**
                 - Efficient sharing of CPU
                 - Fault isolation solved
                 - Support for long-running jobs
