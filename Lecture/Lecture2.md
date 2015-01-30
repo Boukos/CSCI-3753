@@ -106,7 +106,7 @@ System Calls :neckbeard::neckbeard:
 
 * **Multiprogramming** 
     -  :point_right: Submit your program, called a job,into a job queue, when CPU is availble, OS execute your job.
-     - is not suitable with Interactive applications like the shell program(require waiting finish for programs)
+     - :no_entry_sign: is not suitable with Interactive applications like the shell program(require waiting finish for programs)
 
 
 * **Multitasking**
@@ -114,22 +114,16 @@ System Calls :neckbeard::neckbeard:
         - Each program gets a small slice of the CPU, then yields the CPU to another program
         - This switching happens often enough that each program still gets a fair percentage of the CPU, and call still make significant progress
         - At the same time, interactive programs like shells are now supported (**INNOVATION**)
-     - **Advantage**
-        - efficient CPU usage
-        - Better isolation - a misbehaving program can't stop other programs from executing
-        - supports interactivity
+
     - **Disadvantage**
         - Switching from one program to another is called a **context switch**
-        - there is **overhead** due to this context switching
-            - with each context switch, the CPU has to save the current state of application 1
-            - and then load the state of the new application 2 when app 2 was last switched out
+        - :no_entry_sign: there is **overhead** due to this context switching
+            - with each context switch, the CPU has to save the current state of application 1 and then load the state of the new application 2 when app 2 was last switched out
         - All of this takes time and no useful work can be done by program during a context switch
 
-
-
-  - **Cooperative multitaksing**
+- **Cooperative multitaksing**
             - voluntarily yield CPU before they're done (1 program wait for another to finish first)
-            - problem with program hogs the CPU, the we are screwed!
+            - :no_entry_sign: problem with program hogs the CPU, then we are screwed!
   - **Preemptive multitaksing**
             - Force programs to release CPU 
             - OS forces rapid switching between multiple executing programs by setting a hardware timer
