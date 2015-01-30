@@ -121,16 +121,19 @@ System Calls :neckbeard::neckbeard:
             - with each context switch, the CPU has to save the current state of application 1 and then load the state of the new application 2 when app 2 was last switched out
         - All of this takes time and no useful work can be done by program during a context switch
 
+
+Types of Multitasking
+-------------------------
 - **Cooperative multitaksing**
             - voluntarily yield CPU before they're done (1 program wait for another to finish first)
             - :no_entry_sign: problem with program hogs the CPU, then we are screwed!
-  - **Preemptive multitaksing**
+- **Preemptive multitaksing**
             - Force programs to release CPU 
             - OS forces rapid switching between multiple executing programs by setting a hardware timer
             - The timer periodically interruptes CPU execution, invoking OS scheduler to schedule the next program
             - Time Slices
                 - Each program is given a short interval on the CPU called a time slice
-    - **Benifits**
+- **Benifits**
                 - Efficient sharing of CPU
                 - Fault isolation solved
                 - Support for long-running jobs
