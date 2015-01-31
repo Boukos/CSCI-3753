@@ -8,7 +8,7 @@ Problem1
 Time Slice: 2 seconds
 
 ***************************
-* **Timeline of execution**
+* **1. Timeline of execution**
 
 |Seconds|Process|
 |-------|-------|
