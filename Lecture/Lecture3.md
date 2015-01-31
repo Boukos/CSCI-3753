@@ -13,7 +13,7 @@ Recap
       - Batch mode multiprogramming
       - Multitasking
       
-
+ 
 Lecture
 -------
 
