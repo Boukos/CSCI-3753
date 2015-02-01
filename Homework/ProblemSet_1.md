@@ -107,3 +107,12 @@ Problem3
 * A hardware interrupt causes the processor to save its state of execution and begin execution of an interrupt handler. Software interrupts are usually implemented as instructions in the instruction set, which cause a context switch to an interrupt handler similar to a hardware interrupt.
 
 
+Problem4
+---------
+* What role does the jump table play in executing a system call?
+
+*****************************
+
+Most of the system calls are relatively static set of functions. By calling the functions using a simple index into the array means retrieving the pointer and calling a function or jumping to the machine code depending on the type of table used. (ex: syscall(318) calls the helloworld function we created from lab1.)
+
+
