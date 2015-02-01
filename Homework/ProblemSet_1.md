@@ -34,7 +34,7 @@ Time Slice: 2 seconds
 ***************************
 * **3. Percentage Overhead**
   - Time Switch : 11 times
-  - 0.2 / 2 = 10%  and it's been used 11 times.
+  - (0.2 * 11) /21.5 = 10.23% 
 
 ***************************
 
@@ -66,4 +66,9 @@ Problem2
 
 * **3. Percentage Overhead**
   - Time Switch : 2 times
-  - 0.2 / 2 = 10%  and it's been used 2 times.
+  - 0.2 * 2 / 21.5 = 1.9%
+  
+
+* **4. Comparison**
+  -  1. batch mode multiprogrammed finished execution of all three programs faster than preemptively multitasked due to less context switch percentage overhead
+  -  2. if there is many I/O bound that triggers context switch in the batch mode multiprogramming, It can potentially be slower than the other, thus reverse to be true.
