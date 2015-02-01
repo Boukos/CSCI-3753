@@ -1,5 +1,10 @@
 Problem1
 --------
+Suppose we have a round-robin scheduler in the OS kernel of a preemptively time sliced system, and three programs in its ready queue: P1, P2, and P3. P1 takes 10 seconds to complete, P2 takes 8.5 seconds, and P3 takes 3 seconds. Suppose the time slice is 2 seconds, and the overhead for OS context switching is 0.2 seconds. If P1 starts executing first at time 0, when do each of the programs finish executing? Draw a timeline of execution. What is the percentage overhead due to context switching? Assume that a process that finishes early transfers control back to the OS scheduler.
+
+
+***************************
+
 |Process|Time(secs)|
 |-------|----------|
 |p1|10|
@@ -40,6 +45,13 @@ Time Slice: 2 seconds
 
 Problem2
 ---------
+
+Repeat above for a batch mode multiprogrammed OS. Which system, preemptively multitasked or batch mode multiprogrammed finished execution of all three programs the fastest? Under what conditions might the reverse be true?
+
+******************************************************
+
+
+
 |Process|Time(secs)|
 |-------|----------|
 |p1|10|
@@ -72,3 +84,9 @@ Problem2
 * **4. Comparison**
   -  1. batch mode multiprogrammed finished execution of all three programs faster than preemptively multitasked due to less context switch percentage overhead
   -  2. if there is many I/O bound that triggers context switch in the batch mode multiprogramming, It can potentially be slower than the other, thus reverse to be true.
+
+****************************
+
+Problem3
+---------
+Explain the differences between the four different kinds of exceptions found in an OS exception table. What is a software interrupt, and how does that differ from a hardware interrupt?
