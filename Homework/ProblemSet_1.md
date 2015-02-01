@@ -90,3 +90,20 @@ Problem2
 Problem3
 ---------
 * Explain the differences between the four different kinds of exceptions found in an OS exception table. What is a software interrupt, and how does that differ from a hardware interrupt?
+
+****************************
+* **1. Exceptions comparison**
+
+|Exceptions|Differences|
+|----------|-----------|
+|Trap|cause by intentional exception(ex: system call) & always returns to next instruction, synchronous |
+|Fault|cause by potentially recoverable error(ex: stack overflow, invalid opcode) & might return to current instruction, synchronous |
+|(Hardware) Interupt|cause by signal from I/O device(ex: Disk read finished) & always returns to next instruction, asynchronous|
+|Abort| cause by nonrecoverable error(hardware bus failure) & never returns, synchronous|
+
+****************************
+* **2. Software interrupt vs. Hardware interrupt**
+
+* A hardware interrupt causes the processor to save its state of execution and begin execution of an interrupt handler. Software interrupts are usually implemented as instructions in the instruction set, which cause a context switch to an interrupt handler similar to a hardware interrupt.
+
+
