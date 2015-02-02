@@ -14,10 +14,22 @@ Recap
       - Multitasking
       
  
-Lecture
+Lecture Objectives
 -------
+* To explore the structure of an operating system’s I/O subsystem.
+* To discuss the principles and complexities of I/O hardware.
+* To explain the performance aspects of I/O hardware and software.
 
 ******************************************
+
+I/O Hardware
+------------
+![..](http://www.cs.odu.edu/~cs471w/spring10/lectures/IOSystems_files/image017.jpg)
+* **Bus** : A bus is a set of wires connecting multiple devices.
+* **PCI bus** (the common PC system bus) connects the processor memory subsystem to fast devices
+* **Expansion bus** connects relatively slow devices, such as the keyboard and serial and USB ports.
+
+
 
 Multitasking & Abstract Machines
 ----------------------------------
