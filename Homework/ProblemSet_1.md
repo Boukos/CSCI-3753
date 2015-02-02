@@ -26,20 +26,20 @@ Time Slice: 2 seconds
 |12.2 :arrow_right: 14.2|p1|
 |14.4 :arrow_right: 16.4|p2|
 |16.6 :arrow_right: 18.6|p1|
-|20.8 :arrow_right: 22.8|p2|
-|23 :arrow_right: 25|**p1**(finished)|
-|25.2 :arrow_right: 25.7|**p2**(finished)|
+|18.8 :arrow_right: 20.8|p2|
+|21 :arrow_right: 23|**p1**(finished)|
+|23.2 :arrow_right: 23.7|**p2**(finished)|
 
 ***************************
 * **2. Finishing Time**
-  * p3 finishes at 11 seconds
-  * p2 finishes at 21.5 seconds
-  * p1 finishes at 21 seconds
+  * p3 finishes at 12 seconds
+  * p2 finishes at 23.7 seconds
+  * p1 finishes at 23 seconds
 
 ***************************
 * **3. Percentage Overhead**
   - Time Switch : 11 times
-  - (0.2 * 11) /21.5 = 10.23% 
+  - 0.2 / 2 = 10%
 
 ***************************
 
@@ -77,8 +77,7 @@ Problem2
 ****************************
 
 * **3. Percentage Overhead**
-  - Time Switch : 2 times
-  - 0.2 * 2 / 21.5 = 1.9%
+  - None (no context switch involved)
   
 
 * **4. Comparison**
@@ -121,6 +120,8 @@ Problem5
 * Explain in what way overlapping I/O with CPU processing is advantageous. Explain two ways that I/O can be overlapped with CPU execution and how they are each an improvement over not overlapping I/O with the CPU.
 
 *****************
+When I/O overlaps with CPU, it provides enviornment for CPU to run other things, and whenever tasks finished from the I/O, it sends a interupt signal to the CPU telling it that the task is ready to process
+
 Interrupt driven I/O: CPU initiates the I/O and sets up an interrupt handler. After that it performs other useful work in parallel with I/O data transfer being performed by I/O device. When I/O data transfer is complete, the CPU is interrupted to complete the remaining work for completing the I/O. 
 
 DMA based I/O: Similar to interrupt-driven I/O with the addition that DMA controller manages the data transfer between memory and device registers. 
