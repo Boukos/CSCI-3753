@@ -14,7 +14,7 @@ Time Slice: 2 seconds
 
 ***************************
 * **1. Timeline of execution**
-
+ 
 |Seconds|Process|
 |-------|-------|
 |0 :arrow_right: 2|p1|
