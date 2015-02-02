@@ -1,4 +1,4 @@
-Lecture 3 : Device I/O , Interupt
+Lecture 3 : Device I/O , Interupt , DMA
 ------------------------------------
 * Chapter 13 (I/O) for this Lecture
 
