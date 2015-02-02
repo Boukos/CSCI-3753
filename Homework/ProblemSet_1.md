@@ -11,6 +11,7 @@ Problem1
 |p2|8.5|
 |p3|3| 
 Time Slice: 2 seconds
+Context Switch Time: 0.2 seconds
 
 ***************************
 * **1. Timeline of execution**
