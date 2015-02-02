@@ -18,17 +18,17 @@ Time Slice: 2 seconds
 |Seconds|Process|
 |-------|-------|
 |0 :arrow_right: 2|p1|
-|2 :arrow_right: 4|p2|
-|4 :arrow_right: 6|p3|
-|6 :arrow_right: 8|p1|
-|8 :arrow_right: 10|p2|
-|10 :arrow_right: 11|**p3**(finished)|
-|11 :arrow_right: 13|p1|
-|13 :arrow_right: 15|p2|
-|15 :arrow_right: 17|p1|
-|17 :arrow_right: 19|p2|
-|19 :arrow_right: 21|**p1**(finished)|
-|21 :arrow_right: 21.5|**p2**(finished)|
+|2.2 :arrow_right: 4.2|p2|
+|4.4 :arrow_right: 6.4|p3|
+|6.6 :arrow_right: 8.6|p1|
+|8.8 :arrow_right: 10.8|p2|
+|11 :arrow_right: 12|**p3**(finished)|
+|12.2 :arrow_right: 14.2|p1|
+|14.4 :arrow_right: 16.4|p2|
+|16.6 :arrow_right: 18.6|p1|
+|20.8 :arrow_right: 22.8|p2|
+|23 :arrow_right: 25|**p1**(finished)|
+|25.2 :arrow_right: 25.7|**p2**(finished)|
 
 ***************************
 * **2. Finishing Time**
