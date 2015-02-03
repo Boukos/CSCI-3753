@@ -86,3 +86,29 @@ Semaphores , nope don't get it
     * increments the value of S
   - OS provides ways to create and manipulate it.
   
+A Revised Semaphore Definition
+---------------------
+P : make sure the value strickly less than 0. if so add this to the blocklist, block
+V: Remove a process from the block list and then awake the process
+Processes now yield the CPU if the semaphore value is negative (instead of waste time waiting)
+
+**Why FIFO not LIFO ?????????**
+
+Mutual exclusion with Revised Semaphore
+-----------------
+**How to decrements s to -1 and -2 ??**
+* V is call the signaling
+FIFO quene
+
+
+Deadlock
+----------
+* Semaphores provide synchronization, but can introduce more complicated higher level problems like deadlock
+  - two processes deadlock when each wants a resource that has been locked by the other
+  - e.g.  P1 wants resource R2 that is locked by p2 with s2 and vice versa  **BOOM**
+
+
+
+
+
+
