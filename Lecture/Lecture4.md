@@ -58,10 +58,31 @@ More lock
 **Falwed in lock implementation:**
 - if these two program run at the same time, they will exits from the while loop, then both enter to the critical section at the same time!!!
 
+To fix: Achieve by disabling interrupts
+
+* Correct Lock Implementation
+  - Advantage: no race condition 
+ 
+  - Disadvantage: busy waiting for acquire lock
+    - stuck in Acquire() FOREVER NOOOOOO
+
+So, Test-and-Set Instruction
+---------------
+* understand this s!*@
+
+Blocking on locks
+--------------
+* understand this s!*@
 
 
-
-
-
-   
+Semaphores , nope don't get it
+-------------
+* Alternative to Locks
+* more general solution to mutual exclusion proposed by Dijkstra
+* Semaphore S is an integer variable that, apart from initialization, is accessed only through 2 standard atomic operations
+  - P(), also called wait()
+    * somewhat equivalent to test-and-set , but also decrements the value of S
+  - V(), also called signal()
+    * increments the value of S
+  - OS provides ways to create and manipulate it.
   
