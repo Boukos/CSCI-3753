@@ -68,4 +68,11 @@ Detail
   - BAD
     - Time consuming(many release and acquire)
     - Headache to manage
-  
+
+Deadlock Avoidance: 
+-----------------
+    - Goal: analyze the system state to see if there is a way to avoid deadlock(way out of deadlock)(Worst case analysis)
+    - BAD:
+        - need to priori info
+    - Simple strategy：
+        - 给一个预算最大值
