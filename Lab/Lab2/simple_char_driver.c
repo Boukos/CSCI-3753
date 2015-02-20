@@ -14,7 +14,7 @@ static char device_buffer[BUFFER_SIZE];
 static int openCount = 0;
 static int closeCount = 0;
 
-
+ 
 
 
 
