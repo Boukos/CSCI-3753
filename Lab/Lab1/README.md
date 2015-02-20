@@ -9,7 +9,7 @@ Files:
 * Makefile
 	- a general Makefile 
 	- store in x86/kernel
-
+ 
 * simple_add.c
 	- system call for simple_add
 	- store in x86/kernel
