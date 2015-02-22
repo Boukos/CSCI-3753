@@ -58,11 +58,20 @@ Lecture3.5: Processes, Synchronization & Deadlock
   ![](http://s1.postimg.org/h248loyfz/image.png)
 
 
-* 1. Even these two run at the same time, Consumer will block and wait for the signal
-* 2. Consumer later receive a signal, will decrement the signal from Producer's pool 
-* 3. After finish using, Consumer return the signal to the producer and increment the pool
+* Even these two run at the same time, Consumer will block and wait for the signal
+* Consumer later receive a signal, will decrement the signal from Producer's pool 
+* After finish using, Consumer return the signal to the producer and increment the pool
 
-
+:no_entry_sign: Semaphores makes consumers wait for signal, but doesn't stop producers from over-producing.
 
   
+* **Bounded Buffer Problem w/ MORE Semaphores**
 
+  ![](http://s3.postimg.org/dr7gl0jlv/image.png)
+  
+  
+  * Adding concept of **space=N**
+  * sum of chars and space should always be N
+  * when Producer is running, it initially starts with N spaces, then decrement
+  * charcter can be stack all the up to N characters
+  * and consumer used character, and free up the space for producer to use
