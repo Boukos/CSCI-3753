@@ -2,6 +2,46 @@ Problem1
 -----------------
 * **There is a one-lane east-west bridge in Hawaii such that when a car is on the bridge going eastbound, no westbound cars are allowed until the eastbound car has left the bridge.  Similarly when a westbound car is on the bridge, no eastbound cars are allowed until the westbound car has left the bridge.  To make matters more complicated, if an eastbound car arrives and sees another eastbound car already on the bridge, then that eastbound car will also proceed onto the bridge.  This is true even if there is a westbound car already waiting to enter the bridge.  Similarly, a westbound car can tailgate behind another westbound car already on the bridge even if an eastbound car was waiting.   Deign a synchronization solution using only locks, semaphores and integer variables that achieves the following: allows all cars bound in a certain direction to continue crossing as long as there is at least one car still on the bridge that is bound in that direction, then toggles to allow all cars in the opposite direction to proceed in a similar manner.  The solution need not be starvation-free.**
 
+
+```c
+//pseudocode
+
+Semaphore bridge = 1;
+east_Mutex = 1;
+west_Mutex = 1;
+int going_east = 0;
+int going_west = 0;
+
+east_to_west(){
+	p(east_Mutex);  //lock access to counter
+	going_east++;   //train counter from east to west
+	if(going_east == 1) p(bridge);   //lock the bridge if first train enter
+	v(east_Mutex);	//allow train from the same direction to enter
+	
+	p(east_Mutex);	//lock access to counter
+	going_east--;	//decrement train
+	if(going_east == 0) v(bridge);	//unlock bridge
+	v(east_Mutex);	//unlock counter
+
+//west_to_east is nearly indentical to east_to_west in terms of functionalities.
+
+west_to_east(){
+	p(west_Mutex);
+	goint_west++;
+	if(goint_west == 1) p(bridge);
+	v(west_Mutex);
+
+	p(west_Mutex);
+	goint_west--;
+	if(going_west == 0) v(bridge);
+	v(west_Mutex);
+}
+
+
+```
+
+
+
 *****************************
 
 Problem2
