@@ -41,6 +41,9 @@ void swap(int *y, int *z)
 }
 ```
 
+
+
+
 * **b.Suppose the swap() function above is called by the interrupt service routine (ISR) below.  Assume that if swap() is interrupted during normal execution, the ISR below is called and calls swap() again, reentering swap() and executing in the context of the interrupted thread.  Is swap() reentrant?  Explain your reasoning.**
 
 ```c
@@ -56,6 +59,10 @@ void interrupt_service_routine()
 Problem5
 ---------------
 * **Suppose you are asked to design a server application consisting of two processes P1 and P2, such that (1) P2 is to sleep until woken up by P1, whereupon (2) P2 would take a 10 MB file from P1 and compress it. What forms of IPC would be best suited to implement these types of information sharing? Describe your solution.**
+ * (1) signals (for P1 to wakeup P2)
+ * (2) shared memory(for sharing the 10 MB file). It seems like we would want something minimalsuch as a signal for P1 to send to P2, and something fast such as sharedmemory for reading/writing the 10 MB file.
+ 
+
 
 *****************************
 
