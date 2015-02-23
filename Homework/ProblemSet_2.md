@@ -91,8 +91,7 @@ Problem3
 ------------
 * **Explain why the solution to the 3rd Readers/Writers problem is starvation-free.**
 
-Because differ from the original solution of the R/W problem, writer doesn't need to starve as a result of long wait from readers to finish. Readers in the stavation-free case can still line up after getting the first readblock, and when writer is ready to write, it will gets the next readblock after current readers to finish reading, thus preventing stavation.
-
+Starvasion free resulting having the **readblock** differs from solution 1(first in first out). first reader enters, it needs to wait on readBlock and wrt semaphore, and later when it finishes, it signals the readblock. if there is a write then enteres, it lets the writer through the readBlock (in a starvation solution, writer would just have to wait for readers to finish). Thus, the second reader is waiting on the readBlock which doesn’t get signaled until the writer is finished writing. the order of waiting and signaling readBlock and signaling wrt makes it possible to preveting starvations.
 
 ****************************************
 
