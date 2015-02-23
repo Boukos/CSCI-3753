@@ -48,6 +48,40 @@ Problem2
 -------------
 * **Suppose task T1 has code C1 that must execute before task T2's code C2.  Design a solution that enforces this ordering using only condition variables, locks, and integer variables.  Semaphores and monitors are not allowed.**
 
+```c
+
+lock mutex;
+condition x;
+int count=0;
+float f=0.0;
+
+
+T1
+----
+…
+Acquire(mutex);
+f=7.0;
+count++;
+Release(mutex);
+x.signal();
+
+T2
+----
+…
+Acquire(mutex);
+while(f!=7.0 && count<=0) {
+ Release(mutex);
+ x.wait();
+ Acquire(mutex);
+}
+Release(mutex);
+… // proceed
+
+
+
+```
+
+
 
 
 ************************************
@@ -94,6 +128,9 @@ void interrupt_service_routine()
     swap(&a, &b);
 }
 ```
+
+Answer: This code is Reentrant, because when execute, there aren't multiple programs that sharing the global datas, hence the code can be interruptd with no effects taken.
+
 
 *****************************
 
