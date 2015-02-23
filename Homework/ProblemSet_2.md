@@ -150,4 +150,51 @@ Problem6
 * **Suppose processes P0 and P1 share variable V1, and processes P1 and P2 share variable V2, while processes P0, P1 and P2 share V3.  Operations on V1 are limited to increment() and decrement().  Operations on V2 are limited to square() and squareroot().  Operations on V3 are limited to sin() and cos().  Design a monitor-based solution that synchronizes access to and manipulation of these variables between the three processes so that race conditions are eliminated.**
 
 
+```c
+#include <math.h>
+monitor Operation{
+	
+	int v1, v2, v3;
+	condition c1, c2, c3;
+
+
+	public function inc(int i){
+		if(v1) c1.wait();
+		i++;
+		c1.signal();
+	}
+
+	public function dec(int i){
+		if(v1) c1.wait();
+		i--;
+		c1.signal();
+	}
+
+	public function sqr(int i){
+		if(v2) c2.wait();
+		i = i * i;
+		c2.signal();
+	}
+
+	public function sqRoot(int i){
+		if(v2) c2.wait();
+		i = sqrt(i);
+		c2.signal();
+	}
+
+	public function sin(i){
+		if(v3) c3.wait();
+		i = sin(i);
+		c3.signal();
+	}
+
+	public function cos(i){
+		if(v3) c3.wait();
+		i = cos(i);
+		c3.signal();
+	}
+
+}
+```
+
 *****************************
