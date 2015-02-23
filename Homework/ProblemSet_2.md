@@ -27,12 +27,12 @@ west_to_east(){
 
 east_to_west(){
 	p(west_Mutex);
-	goint_west++;
+	going_west++;
 	if(goint_west == 1) p(bridge);
 	v(west_Mutex);
 
 	p(west_Mutex);
-	goint_west--;
+	going_west--;
 	if(going_west == 0) v(bridge);
 	v(west_Mutex);
 }
@@ -116,7 +116,7 @@ void swap(int *y, int *z)
 }
 ```
 
-Anwswer: This is unsafe. Global values (temp and pointers) that results in shared resourse is not consistent during execution.
+Answer: This is unsafe. Global values (temp and pointers) that results in shared resourse is not consistent during execution.
 
 
 
