@@ -12,7 +12,7 @@ west_Mutex = 1;
 int going_east = 0;
 int going_west = 0;
 
-east_to_west(){
+west_to_east(){
 	p(east_Mutex);  //lock access to counter
 	going_east++;   //train counter from east to west
 	if(going_east == 1) p(bridge);   //lock the bridge if first train enter
@@ -25,7 +25,7 @@ east_to_west(){
 
 //west_to_east is nearly indentical to east_to_west in terms of functionalities.
 
-west_to_east(){
+east_to_west(){
 	p(west_Mutex);
 	goint_west++;
 	if(goint_west == 1) p(bridge);
@@ -81,6 +81,7 @@ void swap(int *y, int *z)
 }
 ```
 
+Anwswer: This is unsafe. Global values (temp and pointers) that results in shared resourse is not consistent during execution.
 
 
 
