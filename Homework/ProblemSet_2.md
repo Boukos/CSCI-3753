@@ -91,6 +91,7 @@ Problem3
 ------------
 * **Explain why the solution to the 3rd Readers/Writers problem is starvation-free.**
 
+Because differ from the original solution of the R/W problem, writer doesn't need to starve as a result of long wait from readers to finish. Readers in the stavation-free case can still line up after getting the first readblock, and when writer is ready to write, it will gets the next readblock after current readers to finish reading, thus preventing stavation.
 
 
 ****************************************
@@ -129,7 +130,7 @@ void interrupt_service_routine()
 }
 ```
 
-Answer: This code is Reentrant, because when execute, there aren't multiple programs that sharing the global datas, hence the code can be interruptd with no effects taken.
+Answer: This code is Reentrant, because when execute, there aren't multiple programs that sharing the global datas, hence the code can be interruptd with no effects taken (mainly because status is saved after quiting , and resume with saved data)
 
 
 *****************************
