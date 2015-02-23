@@ -137,8 +137,8 @@ Answer: This code is Reentrant, because when execute, there aren't multiple prog
 Problem5
 ---------------
 * **Suppose you are asked to design a server application consisting of two processes P1 and P2, such that (1) P2 is to sleep until woken up by P1, whereupon (2) P2 would take a 10 MB file from P1 and compress it. What forms of IPC would be best suited to implement these types of information sharing? Describe your solution.**
- * (1) signals (for P1 to wakeup P2)
- * (2) shared memory(for sharing the 10 MB file). It seems like we would want something minimalsuch as a signal for P1 to send to P2, and something fast such as sharedmemory for reading/writing the 10 MB file.
+
+**Unix Domain Sockets** is a suited implementation of these types of information sharing. Sockets are an example of message-passing IPC, which is created in Unix using socket() call. Unix  Domain Sockets are useful for exchanging data between processes executing within the same host operating system. One process acts as the server while the other connects it as clients. In this problem P2 would be the server and waits for the specified instruction. If there are no requests, then P2 will be sleeping. P1 is the process that has the 10MB file that needs to be compressed. P1 sends the request once it has the file, and this includes the file handle to sends this to the P2 socket. P2 receives this and starts to compress the file.
  
 
 
