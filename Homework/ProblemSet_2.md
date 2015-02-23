@@ -154,44 +154,41 @@ Problem6
 #include <math.h>
 monitor Operation{
 	
-	int v1, v2, v3;
-	condition c1, c2, c3;
+	condition c[2];
 
-
-	public function inc(int i){
-		if(v1) c1.wait();
-		i++;
-		c1.signal();
+	public function inc(int * v1) {
+		c[0].wait();
+			*v1++;
+		c[0].signal();
+	}
+	public function dec(int * v1){
+		c[0].wait();
+			*v1--;
+		c[0].signal();
 	}
 
-	public function dec(int i){
-		if(v1) c1.wait();
-		i--;
-		c1.signal();
+	public function sqr(int * v2){
+		c[1].wait();
+			*v2 *= *v2;
+		c[1].signal();
 	}
 
-	public function sqr(int i){
-		if(v2) c2.wait();
-		i = i * i;
-		c2.signal();
+	public function sqRoot(int * v2){
+		c[1].wait();
+			*v2 = sqrt(*v2);
+		c[1].signal();
 	}
 
-	public function sqRoot(int i){
-		if(v2) c2.wait();
-		i = sqrt(i);
-		c2.signal();
+	public function sin(int * v3){
+		c[2].wait();
+			*v3 = sin(*v3);
+		c[2].signal();
 	}
 
-	public function sin(i){
-		if(v3) c3.wait();
-		i = sin(i);
-		c3.signal();
-	}
-
-	public function cos(i){
-		if(v3) c3.wait();
-		i = cos(i);
-		c3.signal();
+	public function cos(int * v3){
+		c[2].wait();
+			*v3 = cos(*v3);
+		c[2].signal();
 	}
 
 }
