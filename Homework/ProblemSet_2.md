@@ -9,7 +9,7 @@ Problem1
 Semaphore bridge = 1;
 east_Mutex = 1;
 west_Mutex = 1;
-int going_east = 0;
+int going_east = 0; 
 int going_west = 0;
 
 west_to_east(){
