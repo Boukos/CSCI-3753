@@ -137,9 +137,9 @@ Problem2
 0|1
  
 * **Deadlock detection algorithm**
-  - **P0-P5** all need 1 extra chopstick where 0 chopstick is available
-  - **P1-P5** all need 1 extra spoon where 1 spoon is available
-  - Thus, **none** of the philosopher can get enough resources resulting **deadlock**
+  - **P1-P5** all need 1 extra chopstick where 0 chopstick is available
+  - **P4** needs 1 spoon and it is available
+  - **None** of the philosopher can get enough resources because of lacking in chopstick resulting **deadlock**
 
 Problem3
 ---------------
