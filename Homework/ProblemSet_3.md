@@ -125,10 +125,10 @@ Problem2
   :white_circle:|R0|R1
 ---|---|---
 **P0**|1|0
-**P1**|1|1
-**P2**|1|1
+**P1**|1|0
+**P2**|1|0
 **P3**|1|1
-**P4**|1|1
+**P4**|1|0
 
 * **Current Resource Available**
 
