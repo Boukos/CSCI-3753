@@ -91,3 +91,53 @@ Problem2
 * **Suppose we have 5 dining philosophers and 5 shared chopsticks, and that the philosophers are circularly deadlocked.  Assume also that there are two serving spoons, one allocated to philopher 1, and the other available.  Assume that philosopher 4 wants a serving spoon.  Show how this situation can be modeled according to the various data structures, e.g. Allocation and Request matrices, used in the Deadlock detection algorithm.  Run the Deadlock detection algorithm on your model to prove that the dining philosophers are in deadlock.**
 
 --------------------------
+* **R0 = Chopstic**
+* **R1 = Spoon**
+* **P0-P5 = 5 philosophers**
+
+
+
+
+
+* **Maximum Claims:**
+
+  :white_circle:|R0|R1
+---|---|---
+**P0**|2|1
+**P1**|2|1
+**P2**|2|1
+**P3**|2|1
+**P4**|2|1
+
+
+* **Current Allocation:**
+
+  :white_circle:|R0|R1
+---|---|---
+**P0**|1|1
+**P1**|1|0
+**P2**|1|0
+**P3**|1|0
+**P4**|1|0
+
+* **Current Needs:**
+
+  :white_circle:|R0|R1
+---|---|---
+**P0**|1|0
+**P1**|1|1
+**P2**|1|1
+**P3**|1|1
+**P4**|1|1
+
+* **Current Resource Available**
+
+  |R0|R1
+|---|---
+0|1
+
+* **Deadlock detection algorithm**
+  - **P0-P5** all need 1 extra chopstick where 0 chopstick is available
+  - **P1-P5** all need 1 extra spoon where 1 spoon is available
+  - Thus, **none** of the philosopher can get enough resources resulting **deadlock**
+
