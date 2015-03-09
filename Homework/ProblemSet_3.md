@@ -135,7 +135,7 @@ Problem2
   |R0|R1
 |---|---
 0|1
-
+ 
 * **Deadlock detection algorithm**
   - **P0-P5** all need 1 extra chopstick where 0 chopstick is available
   - **P1-P5** all need 1 extra spoon where 1 spoon is available
@@ -144,7 +144,7 @@ Problem2
 Problem3
 ---------------
 * **Consider the following set of processes, with the length of
-the CPU execution time given in seconds:*
+the CPU execution time given in seconds:**
 
 
 Process|	Execution Time	|Priority
@@ -159,8 +159,9 @@ P5	|5|	2
 the processes when scheduled according to FCFS, SJF, nonpreemptive
 priority (priority 1 is most important), and round robin (time
 slice=1). Which one has the lowest average wait time? Which one
-has the lowest average turnaround time? **
+has the lowest average turnaround time?**
 
+![](http://s7.postimg.org/3uhyqsegr/img001.jpg)
 
 
 
