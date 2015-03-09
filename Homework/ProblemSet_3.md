@@ -46,40 +46,40 @@ available for each of four resource types is R0=6, R1=4, R2=4, and R3=2. Is the 
 --------------------------
 * This is **Safe**. 
 * **Sequence**:
-  - Step 1: Giving resource to **P0** and update the aviable matrix to:
+  - Step 1: Giving resource to **P2** and update the aviable matrix to:
   
   
     R0|R1|R2|R3
 ---|----|----|----
-8|4|5|2
+2|2|2|1 
   
-  - Step 2: Giving resource to **P1** and update the aviable matrix to:
+  - Step 2: Giving resource to **P3** and update the aviable matrix to:
   
   
     R0|R1|R2|R3
 ---|----|----|----
-9|5|5|2
+3|2|3|1
 
-  - Step 3: Giving resource to **P2** and update the aviable matrix to:
+  - Step 3: Giving resource to **P4** and update the aviable matrix to:
   
   
     R0|R1|R2|R3
 ---|----|----|----
-10|6|5|2
+3|3|3|2
 
-  - Step 4: Giving resource to **P3** and update the aviable matrix to:
+  - Step 4: Giving resource to **P1** and update the aviable matrix to:
   
   
     R0|R1|R2|R3
 ---|----|----|----
-11|6|6|2
+4|4|3|2
 
-  - Step 5: Giving resource to **P4** and update the aviable matrix to:
+  - Step 5: Giving resource to **P0** and update the aviable matrix to:
   
   
     R0|R1|R2|R3
 ---|----|----|----
-11|7|6|3
+6|4|4|2
 
   - *Job Finishes*
   
