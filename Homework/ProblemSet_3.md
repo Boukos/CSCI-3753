@@ -141,6 +141,29 @@ Problem2
   - **P1-P5** all need 1 extra spoon where 1 spoon is available
   - Thus, **none** of the philosopher can get enough resources resulting **deadlock**
 
+Problem3
+---------------
+* **Consider the following set of processes, with the length of
+the CPU execution time given in seconds:*
+
+
+Process|	Execution Time	|Priority
+-----------|-------------|-------------
+P1|	10 	|3
+P2|	1|	1
+P3	|2|	3
+P4	|1	|4
+P5	|5|	2
+
+* **Draw four Gantt charts that illustrate the timeline of execution of
+the processes when scheduled according to FCFS, SJF, nonpreemptive
+priority (priority 1 is most important), and round robin (time
+slice=1). Which one has the lowest average wait time? Which one
+has the lowest average turnaround time?**
+
+
+
+
 Problem4
 --------------
 
