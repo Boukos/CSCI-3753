@@ -159,7 +159,7 @@ P5	|5|	2
 the processes when scheduled according to FCFS, SJF, nonpreemptive
 priority (priority 1 is most important), and round robin (time
 slice=1). Which one has the lowest average wait time? Which one
-has the lowest average turnaround time?**
+has the lowest average turnaround time? **
 
 
 
