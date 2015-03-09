@@ -171,5 +171,17 @@ Problem4
 * **Suppose the Completely Fair Scheduler (CFS) algorithm is applied to the following scenario.  There exist two processes P1 and P2 that need to be scheduled.  P1 has two threads T1 and T2 that are implemented as kernel threads.  P2 has three threads T3, T4, and T5 that are implemented as user space threads.  We apply round robin scheduling to all schedulable tasks, where each task schedulable by the kernel receives a time slice of size T seconds.**
 
   - **a. Draw the table of wait times (times owed on an ideal CPU) for one round robin of this scenario, i.e. what are the wait time balances as each time slice is allocated to a kernel-schedulable task, and what is the final wait time for each such task?  See for example slide 21 of the Chapter 6.3 lecture slides.**
+  
+:white_circle:|:white_circle:|:white_circle:|:white_circle:
+-------------|-------------|-------------|--------------
+T1|T2|P2|T1
+
+
+Giving time T to task:|T1|T2|P2
+----------------|-----------|-------------|--------------
+T1|-2T/3|T/3|T/3
+T2|-1T/3|-1T/3|2T/3
+P2|0|0|0
+
 
   - **b. Is this system fair at the level of schedulable tasks?  Is this system fair at the level of processes?  Justify your answers.**
