@@ -141,3 +141,11 @@ Problem2
   - **P1-P5** all need 1 extra spoon where 1 spoon is available
   - Thus, **none** of the philosopher can get enough resources resulting **deadlock**
 
+Problem4
+--------------
+
+* **Suppose the Completely Fair Scheduler (CFS) algorithm is applied to the following scenario.  There exist two processes P1 and P2 that need to be scheduled.  P1 has two threads T1 and T2 that are implemented as kernel threads.  P2 has three threads T3, T4, and T5 that are implemented as user space threads.  We apply round robin scheduling to all schedulable tasks, where each task schedulable by the kernel receives a time slice of size T seconds.**
+
+  - **a. Draw the table of wait times (times owed on an ideal CPU) for one round robin of this scenario, i.e. what are the wait time balances as each time slice is allocated to a kernel-schedulable task, and what is the final wait time for each such task?  See for example slide 21 of the Chapter 6.3 lecture slides.**
+
+  - **b. Is this system fair at the level of schedulable tasks?  Is this system fair at the level of processes?  Justify your answers.**
