@@ -27,11 +27,21 @@ available for each of four resource types is R0=6, R1=4, R2=4, and R3=2. Is the 
 **P3**|1|0|1|0
 **P4**|0|1|0|1
 
-* **Resource Available**
+* **Current Needs:**
+
+  :white_circle: |R0|R1|R2|R3
+---|----|----|----|----
+**P0**|1|2|0|1
+**P1**|0|1|0|2
+**P2**|0|0|2|0
+**P3**|2|2|0|0
+**P4**|2|0|0|0
+
+* **Current Resource Available**
 
   R0|R1|R2|R3
 ---|----|----|----
-6|4|4|2
+1|1|2|1
 
 --------------------------
 * This is **Safe**. 
