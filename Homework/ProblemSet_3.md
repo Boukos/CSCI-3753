@@ -185,3 +185,6 @@ P2|0|0|0
 
 
   - **b. Is this system fair at the level of schedulable tasks?  Is this system fair at the level of processes?  Justify your answers.**
+
+    - The system is fair at level of schedulable task because each tasks gets right amount of shares. 
+    - The system is not fair at level of processes because the process runs in the user space has to share it's resources to three of its threads
