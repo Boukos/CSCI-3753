@@ -4,7 +4,7 @@ Problem1
 available for each of four resource types is R0=6, R1=4, R2=4, and R3=2. Is the system in a safe state? If not, then explain why not, or if so, find a safe sequence. Show your work**
 
 --------------------------
-
+ 
 
 * **Maximum Claims:**
 
