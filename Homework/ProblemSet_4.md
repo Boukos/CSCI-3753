@@ -11,7 +11,6 @@ Problem 1
 *
 * **Garbage Collection**  it collects all the memory which is inaccessible and return them as a free memory
 
--------------------------------------------------------
 
 Problem 2
 ------------
@@ -23,7 +22,7 @@ Problem 2
   * e. 1603 bytes using a first-fit policy? (assume the free list is ordered as listed above)   **Answer: 2200**
   * f. 1049 using a first-fit policy?   **Answer: 2200**
   
-  -------------------------------------------------------
+
   
 Problem 3
 -------------
