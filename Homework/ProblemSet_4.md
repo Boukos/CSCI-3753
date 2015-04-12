@@ -15,6 +15,9 @@ Problem 1
 Problem 2
 ------------
 * **A memory manager for a variable-sized region strategy has a free list of blocks of size 600, 400, 1000, 2200, 1600, and 1050 bytes. What block will be selected to honor a request for:**
+
+----------------------------
+
   * a. 1603 bytes using a best-fit policy?   **Answer: 2200**
   * b. 949 bytes using a best-fit policy?   **Answer: 1000**   
   * c. 1603 bytes using a worst-fit policy?   **Answer: 2200**
