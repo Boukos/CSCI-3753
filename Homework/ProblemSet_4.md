@@ -46,4 +46,5 @@ Problem 5
 
 Because FIFO assumes that the mere fact that a page has been occupying memory for a long time that it is the safest to replace, where in reality that simply isn't the case. Rather, where FIFO fails is that statistically, if a page has been called frequently, it's more likely to be called again than another page which has been called recently. In other words, frequency is a far better determiner of page loading than age.
 
+![](http://s18.postimg.org/uoq71z1a1/img004.jpg)
 
