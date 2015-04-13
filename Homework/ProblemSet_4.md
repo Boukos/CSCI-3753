@@ -43,3 +43,7 @@ Problem 4
 Problem 5
 ------------------------
 **The Least Recently Used (LRU) page replacement policy does not suffer from Belady's Anomaly. Explain intuitively why this is the case. Construct an example page fault sequence to illustrate your point.**
+
+Because FIFO assumes that the mere fact that a page has been occupying memory for a long time that it is the safest to replace, where in reality that simply isn't the case. Rather, where FIFO fails is that statistically, if a page has been called frequently, it's more likely to be called again than another page which has been called recently. In other words, frequency is a far better determiner of page loading than age.
+
+
