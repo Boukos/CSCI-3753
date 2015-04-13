@@ -41,4 +41,7 @@ Problem 4
  * A). T+ D *P + M *P_TLB
  * B). 1+(10^7) *0.001+10 *0.09 = 10001.9 ns
 
+![](http://s10.postimg.org/qm59vedkp/img002.jpg)
+
+
 ------------------------
