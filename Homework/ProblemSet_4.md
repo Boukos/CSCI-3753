@@ -53,3 +53,6 @@ Problem 6
 * a. FIFO 
 * b. OPT 
 * c. LRU
+
+
+![](http://s16.postimg.org/xf9jcp9np/img005.jpg)
