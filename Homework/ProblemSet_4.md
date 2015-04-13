@@ -63,4 +63,4 @@ Problem 7
 
 **Assume the same sequence of page references as in problem #6, and assume memory is initially unloaded, but now assume that a dynamic paging working-set algorithm is applied to the same sequence of page references, with a window size of 6. Draw the page faulting behavior. Your solution chart should show the frame allocation at any given time to the process.**
 
-![](http://postimg.org/image/g7rcqcjdt/47a1f6a9/)
+![](http://s16.postimg.org/sme4qoaw5/img006.jpg)
