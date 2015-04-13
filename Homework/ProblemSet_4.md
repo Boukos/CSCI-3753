@@ -36,6 +36,6 @@ Problem 4
 **Suppose on-demand paging is employed in addition to TLB caching. The time for a TLB hit is T = 1 ns, a memory read M = 10 ns, and a disk read D = 10 ms. Let p_TLB = the probability of a TLB hit, and p = the probability of a page fault given a TLB miss. What is a general formula for the average memory access time expressed as a function of T, M, D, p, and p_TLB? Once parameter values are substituted, and assuming assuming p = .001 and p_TLB = 90%, what is the calculated average memory access time?**
 
  * A). T+ D *P + M *P_TLB
- * B). 1+(10^7) *0.001+10 *0.09 = 10001.9
+ * B). 1+(10^7) *0.001+10 *0.09 = 10001.9 ns
 
 ------------------------
