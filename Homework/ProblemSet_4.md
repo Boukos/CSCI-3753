@@ -40,5 +40,6 @@ Problem 4
 
 ![](http://s10.postimg.org/qm59vedkp/img002.jpg)
 
-
+Problem 5
 ------------------------
+**The Least Recently Used (LRU) page replacement policy does not suffer from Belady's Anomaly. Explain intuitively why this is the case. Construct an example page fault sequence to illustrate your point.**
