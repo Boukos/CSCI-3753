@@ -17,4 +17,5 @@
 * **(4) Describe the SSH protocol in detail, i.e. describe the initial handshaking phase as well as the subsequent data messaging phase. When a user supplies their login password, is it encrypted by a public key or a symmetric key, and why? Explain why or why not SSH is resilient to eavesdropping attacks, man-in-the-middle attacks, and/or replay attacks.**
 
  * note: N = p*q
- * Server first sends N to the user, the user stores N, and then send N back to the server. Server verifys the N with p&q. User randomly generates encrypted message K with pre-stored N, and send it to the server, server then use K for AES . Then the SSH session is now encryped with K.
+ * Description: Server first sends N to the user, the user stores N, and then send N back to the server. Server verifys the N with p&q. User randomly generates encrypted message K with pre-stored N, and send it to the server, server then use K for AES . Then the SSH session is now encryped with K.
+ * It is encryped by a symmetric key K, because only the server knows the private key, and can solve that to decrpted the symmetrick key K. If the hack is fake a encrpted message K , the server will decript that and send back to user some non-sense characters because the user can't decript the message.
