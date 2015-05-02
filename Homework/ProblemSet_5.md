@@ -9,7 +9,7 @@
  * **b. a UNIX-style file system?**
 
 
-
+ 
 
 ------------------------------------------------------
 * **(2) Suppose you are given a flash memory consisting of 4 KB pages, and there are 1024 pages. How many bytes of memory would the OS need to keep track of free space in the worst case (all of flash memory is free) if**
