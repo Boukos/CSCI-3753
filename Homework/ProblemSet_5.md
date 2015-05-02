@@ -15,4 +15,6 @@
  * LOOK: (103-97) + (155 - 103) + (197 - 155) + (197 - 96) + (96 - 84) = 213
  
 * **(4) Describe the SSH protocol in detail, i.e. describe the initial handshaking phase as well as the subsequent data messaging phase. When a user supplies their login password, is it encrypted by a public key or a symmetric key, and why? Explain why or why not SSH is resilient to eavesdropping attacks, man-in-the-middle attacks, and/or replay attacks.**
-* 
+
+ * note: N = p*q
+ * Server first sends N to the user, the user stores N, and then send N back to the server. Server verifys the N with p&q. User randomly generates encrypted message K with pre-stored N, and send it to the server, server then use K for AES . Then the SSH session is now encryped with K.
