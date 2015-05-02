@@ -9,7 +9,10 @@
     * third indrect blocks = 13* 4 + 13* 4* 2 + 15* 4* 4 bytes
   
     * (12 * 4)+(15 * 4)+(13 * 4)+(15 * 4 *2)+(13 * 4)+(13 * 4 * 2)+(15 * 4 * 4) = 676 bytes   
- 
+  
+  * **c. the same FAT file system? **  1999/15 = 74 search
+  * **d. the same UNIX-style file system?**   5th level down into the search
+   
 
 ------------------------------------------------------
 * **(2) Suppose you are given a flash memory consisting of 4 KB pages, and there are 1024 pages. How many bytes of memory would the OS need to keep track of free space in the worst case (all of flash memory is free) if**
