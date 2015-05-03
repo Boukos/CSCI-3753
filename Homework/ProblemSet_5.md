@@ -1,6 +1,6 @@
 * **(1) You are asked to allocate a file according to either a File Allocation Table (FAT) or multi-level indexed allocation (UNIX inode - triply indirect). Assume that the file is 2000 disk blocks long, there are 4 KB per disk block, each pointer in the FAT occupies 4 bytes, the first index block contains 15 entries (of which 12 are direct, and one each is singly indirect, doubly indirect, and triply indirect - see slides or textbook), every other index block contains 15 entries (may be indirect depending on the nesting level), each index block entry takes 4 bytes, and unused index blocks don't count in the total memory cost, though unusued entries in partially filled index blocks do count. How many bytes are used to lay out the file when using** 
  * **a. a FAT file system?**
-   * 15 * 4 = 60 bytes
+   * 2000 * 4 = 8000 bytes
 
  * **b. a UNIX-style file system?**
     * first level index blocks = 12* 4 bytes
@@ -10,8 +10,8 @@
   
     * (12 * 4)+(15 * 4)+(13 * 4)+(15 * 4 *2)+(13 * 4)+(13 * 4 * 2)+(15 * 4 * 4) = 676 bytes   
   
-  * **c. the same FAT file system? **  1999/15 = 74 search
-  * **d. the same UNIX-style file system?**   5th level down into the search
+  * **c. the same FAT file system? **  1099
+  * **d. the same UNIX-style file system?**   4th level down into the search
    
 
 ------------------------------------------------------
