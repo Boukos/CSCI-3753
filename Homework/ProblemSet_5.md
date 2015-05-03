@@ -8,7 +8,7 @@
     * second indrect blocks = 13* 4 + 15* 4* 2 bytes
     * third indrect blocks = 13* 4 + 13* 4* 2 + 15* 4* 4 bytes
   
-    * (12 * 4)+(15 * 4)+(13 * 4)+(15 * 4 *2)+(13 * 4)+(13 * 4 * 2)+(15 * 4 * 4) = 676 bytes   
+    * (12 * 4)+(15 * 4)+(13 * 4)+(15 * 4 *2)+(13 * 4)+(13 * 4 * 2)+(15 * 4 * 4) = 8640 bytes   
   
   * **c. the same FAT file system? **  1099
   * **d. the same UNIX-style file system?**   4th level down into the search
